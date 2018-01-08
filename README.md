@@ -4,7 +4,7 @@
 
 1. INTRODUCCIÓN
 
-    1. [Introducción a Alastria](Introduccion/Introduccion a Alastria.md)
+    1. [Introducción a Alastria](Introduccion/Introduccion-a-Alastria.md)
     2. Tecnologías a utilizar
     3. Arquitectura de la red blockchain de Alastria
     4. Roadmap técnico de la plataforma de Alastria
