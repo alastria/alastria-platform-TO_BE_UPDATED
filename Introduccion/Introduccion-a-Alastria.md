@@ -31,4 +31,4 @@ Permite algoritmos de consenso más eficientes (con respecto a “Proof of Work�
 
 
 ***
-Siguiente: [Tecnologías a utilizar](Introduccion/Tecnologias-a-utilizar)
+Siguiente: [Tecnologías a utilizar](Introduccion/Tecnologias-a-utilizar.md)
