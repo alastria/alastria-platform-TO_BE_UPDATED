@@ -4,12 +4,12 @@
 
 1. INTRODUCCIÓN
 
-    1. [Introducción a Alastria](Introduccion/Introduccion-a-Alastria)
-    2. [Tecnologías a utilizar](Introduccion/Tecnologias-a-utilizar)
-    3. [Arquitectura de la red blockchain de Alastria](Introduccion/Arquitectura-de-la-red-blockchain-de-Alastria)
-    4. [Roadmap técnico de la plataforma de Alastria](Introduccion/Roadmap-tecnico-de-la-plataforma-de-Alastria)
-    5. [Cómo nos organizamos](Introduccion/Como-nos-organizamos)
-    6. [Alguna información útil](Introduccion/Alguna-informacion-util)
+    1. [Introducción a Alastria](Introduccion/Introduccion-a-Alastria.md)
+    2. [Tecnologías a utilizar](Introduccion/Tecnologias-a-utilizar.md)
+    3. [Arquitectura de la red blockchain de Alastria](Introduccion/Arquitectura-de-la-red-blockchain-de-Alastria.md)
+    4. [Roadmap técnico de la plataforma de Alastria](Introduccion/Roadmap-tecnico-de-la-plataforma-de-Alastria.md)
+    5. [Cómo nos organizamos](Introduccion/Como-nos-organizamos.md)
+    6. [Alguna información útil](Introduccion/Alguna-informacion-util.md)
 
 1. REQUERIMIENTOS DE LA PLATAFORMA
 
