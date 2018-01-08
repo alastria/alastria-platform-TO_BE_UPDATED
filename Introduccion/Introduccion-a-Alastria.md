@@ -29,13 +29,6 @@ Permite algoritmos de consenso más eficientes (con respecto a “Proof of Work�
 * “Transaction finality” en un bloque
 … pero necesita implementar un Modelo de Gobierno Distribuido
 
-# Organización de esta Wiki:
-1. [Introducción](https://github.com/jesus-alastria/alastria-node/wiki)
-2. [Tecnologías a utilizar](https://github.com/jesus-alastria/alastria-node/wiki/Tecnolog%C3%ADas-a-utilizar)
-3. [Arquitectura de la red blockchain de Alastria](https://github.com/jesus-alastria/alastria-node/wiki/Arquitectura-de-la-red-blockchain-de-Alastria)
-4. [Roadmap técnico de la plataforma de Alastria](https://github.com/jesus-alastria/alastria-node/wiki/Roadmap-t%C3%A9cnico-de-la-plataforma-de-Alastria)
-5. [Cómo nos organizamos](https://github.com/jesus-alastria/alastria-node/wiki/C%C3%B3mo-nos-organizamos)
-6. [Alguna información útil](https://github.com/jesus-alastria/alastria-node/wiki/Alguna-informaci%C3%B3n-%C3%BAtil)
 
 ***
-Siguiente: [Tecnologías a utilizar](https://github.com/jesus-alastria/alastria-node/wiki/Tecnolog%C3%ADas-a-utilizar)
+Siguiente: [Tecnologías a utilizar](Introduccion/Tecnologias-a-utilizar)
