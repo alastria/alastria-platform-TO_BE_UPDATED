@@ -30,7 +30,7 @@
             4. Normas y recomendaciones del Consejo Nacional de Ciberseguridad
             6. Otros
 
-    1. [Requerimientos Técnicos](Requerimientos(Requerimientos-tecnicos.md))
+    1. [Requerimientos Técnicos](Requerimientos(Requerimientos/Requerimientos-tecnicos.md))
         1. Privacidad
             1. Privacidad de la actividad transaccional
             1. Privacidad de los datos
