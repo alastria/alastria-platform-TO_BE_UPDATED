@@ -35,8 +35,8 @@ comienza su implementación. Una vez implementado e incluido a la nueva versión
 de la plataforma será *Final*. Si la comisión técnica considera que una
 mejora no es prioritaria se mantendrá en *Deferred* y las que no aplican como
 *Dismissed*. A partir del estado *Accepted*, el AIP se incluirá en una carpeta
-independiente en el directorio AIPs con toda la documentación del mismo y se cerrará
-la issue.
+independiente en el directorio AIPs con toda la documentación del mismo. Al pasar
+su estado a *Final* la issue se cerrará.
 
 ## Categorías de AIPs
 Inicialmente se definen las siguientes categorías:
