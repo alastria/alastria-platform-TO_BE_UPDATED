@@ -34,7 +34,9 @@ asociada al AIP. Una vez llegado a consenso y aceptada el AIP *Accepted*,
 comienza su implementación. Una vez implementado e incluido a la nueva versión
 de la plataforma será *Final*. Si la comisión técnica considera que una
 mejora no es prioritaria se mantendrá en *Deferred* y las que no aplican como
-*Dismissed*.
+*Dismissed*. A partir del estado *Accepted*, el AIP se incluirá en una carpeta
+independiente en el directorio AIPs con toda la documentación del mismo y se cerrará
+la issue.
 
 ## Categorías de AIPs
 Inicialmente se definen las siguientes categorías:
