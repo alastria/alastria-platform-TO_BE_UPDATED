@@ -3,6 +3,7 @@
 |--------------------------------------|--------------|
 |Jesús Ruiz (director, CTO de Alastria)|Santander     |
 |Marcos Serradilla                     |Vector        |
+|Alfonso de la Rocha                   |Indra        |
 |Esteban Montenegro                    |Repsol        |
 |Iñigo García                          |Grant Thornton|
 |Angel Rodriguez                       |Everis        |

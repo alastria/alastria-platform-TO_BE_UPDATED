@@ -10,6 +10,7 @@
     4. [Roadmap técnico de la plataforma de Alastria](Introduccion/Roadmap-tecnico-de-la-plataforma-de-Alastria.md)
     5. [Cómo nos organizamos](Introduccion/Como-nos-organizamos.md)
     6. [Alguna información útil](Introduccion/Alguna-informacion-util.md)
+    7. [Alastria Improvement Proposals (AIPs)](AIPs/aips.md)
 
 1. REQUERIMIENTOS DE LA PLATAFORMA
 
