@@ -4,7 +4,6 @@
     Title: `<Título AIP>`
     Author: `<Autor>`
     Type: `<Tipo>`
-    Category: `<Categoría>`
     Status: `<Estado>`
     Created: `<Fecha creación>`
 
