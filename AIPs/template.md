@@ -8,11 +8,11 @@
     Created: `<Fecha creación>`
 
 
-## Breve resumen
+## Abstract
 
 Breve resumen de la mejora
 
-## Descripción
+## Description
 
 Descripción detallada de la mejora propuesta
 
@@ -37,6 +37,6 @@ Compataiblidad hacia atrás
 
 Pruebas para la implementación.
 
-## URL discusión
+## URL forum discussion
 
 URL de la discusión asociada en el foro de Alastria.
