@@ -3,20 +3,16 @@
     AIP: `AIP-2`
     Title: `Node monitoring`
     Author: `Marcos Serradilla`
-    Type: `User History`
+    Type: `Monitor`
     Status: `Draft`
     Created: `11-01-2017`
 
 
-## Abstract
-
-Define the functionality that the Node Monitor utility should initially implement.
-
 ## Description
 
-The monitoring tool must be able to maintain and update the infromación of the node by administrative needs of the network. 
+The monitoring tool must be able to maintain and update the infromación of a node according to the administrative needs of the network. 
 
-Thus MIMO, collect monitoring information to identify possible overloads, modifications Indevid in the installation of the node, etc.
+Thus MIMO, collect monitoring information to identify possible overloads, or malicious modifications in the installation of the node, etc.
 
 ## Motivation
 
@@ -24,7 +20,7 @@ Some administrative operations on the node can be very repetitive and/or urgent 
 
 ## Specification
 
-Proposed User Histories:
+Proposed User Stories:
 
 1. As a node manager I want to pre-authorize the execution of any of the commands that potentially allow to change something in my node.
 
@@ -49,8 +45,6 @@ Proposed User Histories:
 11. As Alastria core technical team I want to have a direct communication channel with the administrators of each and every one of the nodes through which to request specific actions and receive the corresponding answers.
 
 12. As a Alastria core technical team I want to have a REST service with the access API both to launch the operations, and to obtain the monitoring information in order to automate the monitoring processes.
-
-## Rationale
 
 Repository: https://github.com/alastria/monitor
 
