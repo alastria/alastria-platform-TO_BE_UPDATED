@@ -71,12 +71,14 @@
         6. Capa de Datos
         7. Capa de Conectividad
         8. Puertos conocidos
+
     1. Entornos
+    
         1. Entorno Desarrollo (descripción/características)
-        1. Equipo (máquina) de desarrollo (recomendaciónes)
+        1. Equipo (máquina) de desarrollo (recomendaciónes)
         1. Proceso de desarrollo
         1. Proceso de Pruebas (descripción/características)
-        1. Entornos Preproducción/Producción (descripción/características)
+        1. Entornos Preproducción/Producción (descripción/características)
         1. Acceso usuario
         1. Estimación del Sizing Nodos por tipos de nodo
         1. Base de datos
