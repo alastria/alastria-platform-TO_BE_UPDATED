@@ -31,7 +31,7 @@
             4. Normas y recomendaciones del Consejo Nacional de Ciberseguridad
             6. Otros
 
-    1. [Requerimientos Técnicos](Requerimientos/Requerimientos-tecnicos.md))
+    1. [Requerimientos Técnicos](Requerimientos/Requerimientos-tecnicos.md)
         1. Privacidad
             1. Privacidad de la actividad transaccional
             1. Privacidad de los datos
@@ -67,21 +67,22 @@
         2. Estructura
         3. Arquitectura Lógica Nodos
         4. Capa de comunicación
-        5. Capa de Servicios de Negocio
-        6. Capa de Agregación, Transformación y persistencia de Datos
+        5. Capa de Servicios
+        6. Capa de Datos
         7. Capa de Conectividad
         8. Puertos conocidos
     1. Entornos
-        1. Entorno Desarrollo/ descripción/características
-        2. Equipo de desarrollo (PC)
-        3. Entorno Preproducción/descripción/características
-        4. Entorno Producción/descripción/características
-        5. Acceso usuario
-        6. Estimación del Sizing Nodos --> Necesario para los diferentes socios que quieren desplegar un nodo
-        7. Base de datos
-        8. Almacenamiento
-        9. Servidor de aplicaciones
-        10. Alta disponibilidad
+        1. Entorno Desarrollo (descripción/características)
+        1. Equipo (máquina) de desarrollo (recomendaciónes)
+        1. Proceso de desarrollo
+        1. Proceso de Pruebas (descripción/características)
+        1. Entornos Preproducción/Producción (descripción/características)
+        1. Acceso usuario
+        1. Estimación del Sizing Nodos por tipos de nodo
+        1. Base de datos
+        1. Almacenamiento
+        1. Servidor de aplicaciones
+        1. Alta disponibilidad
 
 1. ARQUITECTURA DE SEGURIDAD
     1. General
@@ -109,12 +110,12 @@
 1. ARQUITECTURA DE INTEGRACION
     1. Interacción de Alastria con sistemas backend/core de negocio
     2. Interacción de Alastria con otras redes (interoperabilidad)
-    3. Interacción de Alastria con otros servicios
+    3. Interacción de Alastria con otros servicios (por ejemplo almacenamiento)
     4. Interacción con otras tecnologías
-    5. Conexiones con Bases de Datos
-    6. APIs --> a partir de los servicios
+    5. Conexiones con Bases de Datos (por ejemplo cache de transacciones)
+    6. APIs para acceder a los servicios proporcionados
     7. Protocolos de conexión/integración Soportados
-    8. Intercambio de Ficheros
+    8. Intercambio de Ficheros (por ejemplo de configuración de los nodos)
 
 1. ARQUITECTURA DE DESARROLLO
     1. General
@@ -122,25 +123,28 @@
         2. Lenguaje de desarrollo
         3. Metodología de Desarrollo
         4. Modelo de Datos
-        5. Interfaz de usuario -->  tiene sentido?
-        6. Tecnologías de Creación de Interfaz de Usuario --> Tiene sentido?
+        5. Interfaz de usuario
+        6. Tecnologías de Creación de Interfaz de Usuario
         7. Control de Versiones
         8. Paso entre entornos
         9. Jobs
 
     1. Pruebas
-        1. Unitarias
-        2. Integradas
-        3. Stress
-        4. Seguridad
+        1. Unitarias de nodo
+        1. Integradas de nodo
+        1. Integradas de red
+        1. Stress de nodo
+        1. Stress de red
+        1. Seguridad
 
 1. INSTALACIÓN Y CONFIGURACIÓN DE NODOS
     1. Requerimientos previos a la instalación
-    2. Instalación de Nodo Alastria
-    3. Descarga de los componentes
-    4. Instalación de los componentes
-    5. Asignación de Roles
-    6. Conectividad con Nodos de terceros
+    1. Instalación de Nodo Alastria
+    1. Descarga de los componentes
+    1. Instalación de los componentes
+    1. Asignación de Roles
+    1. Alta del nuevo nodo en Validadores o Regulares
+    1. Conectividad con Nodos de terceros
 
 1. POLITICA DE DESPLIEGUE Y MANTENIMIENTO
     1. Despliegue
