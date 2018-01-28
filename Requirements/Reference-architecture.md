@@ -1,3 +1,10 @@
+# Reference architecture of a blockchain
+![](https://docs.google.com/drawings/d/e/2PACX-1vQnYqNAfekzwVrKIwAkchLN2D9m99WJdeZNpjgm2xxN_4cldvGrVAgG7QIaW_JN0A0UVnWzC9QobB9W/pub?w=1130&h=660)
+
+
+
+# Technical Architecture
+
 1. ARQUITECTURA TÉCNICA
     1. General
         1. Plataforma
