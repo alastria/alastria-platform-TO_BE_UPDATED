@@ -3,8 +3,6 @@ The reference architecture of blockchain and distributed ledger technology consi
 
 ![](https://docs.google.com/drawings/d/e/2PACX-1vQnYqNAfekzwVrKIwAkchLN2D9m99WJdeZNpjgm2xxN_4cldvGrVAgG7QIaW_JN0A0UVnWzC9QobB9W/pub?w=1130&h=660)
 
-![](https://docs.google.com/drawings/d/e/2PACX-1vT93ch52Ep-6YkqFiOZpPRUyv5-fDhEwki9itMILAAg6_g3ZF0DaSRu4pGUBc3-z_OudckU4j4Vr_v5/pub?w=1071&h=798)
-
 # Infrastructure layer
 
 The Infrastructure layer provides the operating environment, including networking and compute and storage components required for the normal operation of a blockchain system. It may be provided as a set of cloud computing resources or it may be provided as on-premises equipment.
@@ -138,6 +136,10 @@ Off-Ledger Data is a critical component needed to implement proper data privacy 
 # Cross-layer functions
 
 The cross-layer functions support the components across all the functional layers. For example, security is needed for user layer, API layer and DLT Platform layer, therefore security is a cross-layer functional component. Cross layer functions can support other cross layer functions as well. The functions are grouped into Development, Operations & Management, Security, and Governance & Compliance categories.
+The cross-layer functions are depicted in the following figure and are described in more detail in the following sections.
+
+![](https://docs.google.com/drawings/d/e/2PACX-1vT93ch52Ep-6YkqFiOZpPRUyv5-fDhEwki9itMILAAg6_g3ZF0DaSRu4pGUBc3-z_OudckU4j4Vr_v5/pub?w=1071&h=798)
+
 
 ## Development
 
@@ -249,32 +251,37 @@ The PII protection component provides capabilities to assist the provision of ap
 ## Governance and Compliance
 
 Governance and Compliance functional components enable the DLT system to conform to governed and auditable characteristics based on governance and compliance requirements of DLT node owners and operators. Governance can help prevent DLT networks from being outside of laws, regulations and industry rules (like becoming the carrier of money laundering, illegal financing or criminal transactions). They include the following functions:
- supervisory support
- audit support
- governance control
- policy management
-To explain these further:
- Supervisory Support
-supervisory support function is mainly used to meet the requirements of supervisory body for environment, system, availability, disaster recovery, system operation and maintenance, and compliance of supported functions in DLT system. Due to differences between industry supervisors and supervisory methods, the depth and breadth of functions involved are different. Specific needs include:
-o should have a sound and complete supervisory governance system. Through pre-admission control, in-process authority control, ex post facto and other technical means to achieve supervisory objectives, ensure that records cannot be tampered with, be traceable and auditable
-o let supervisory body join the DLT network as one of the nodes for immediate supervision. The supervisory node can monitor and audit data integrity, validity and process compliance in real time, intervene in transaction, and stop illegal business
-o data and evidence related to supervision and intervention activities should be recorded and maintained
-o set clear supervisory governance rules. Support rules that are supervised and managed by people and cannot be automatically implemented by technology
-o support rules for the organization or management personnel to conduct supervisory governance in accordance with laws, administrative regulations, departmental rules and regulations, encourage full use of smart contracts and other technologies to effectively support intelligent supervisory operation, and provide supervisory rules for automated implementation
-o save data and evidence relating to systems, resources and performance. These data and evidence include records and logs of all participants' activities and operating environmental conditions, which need to be collected and maintained in a safe manner
- Audit Support
-Audit support function is mainly used to achieve audit internal control, responsibility identification, event traceability and other requirements of DLT system, which needs effective technical means together with business sector standards for accurate audit management. Specific requirements include:
-20
-© ISO #### – All rights reserved
-o o
-enable conducting pre-audit, concurrent audit and post audit on DLT activities, establish audit indicators such as violation of discipline audit, internal control system audit, performance audit and other contents
-enable DLT auditors join the DLT network as one of the nodes for real-time audit, or allow the DLT auditor to access to data and evidence in DLT networks on demand or on a regular basis as a third-party outside the DLT network. Encourage non-tampering and traceable characteristics based on DLT technology, make real-time verification on records of audited object and use as audit evidence
+- supervisory support
+- audit support
+- governance control
+- policy management
 
-o enable docking and interactions between DLT networks and other related systems, improve audit efficiency and reliability of audit results
-o enable data and evidence related to audit activities. The data and evidence include but are not limited to records and logs of activities and operating environment conditions of all participants in DLT, audit view record of the auditor, audit processes and results information, and avoid leakage of audit information
- Governance Controls
+### Supervisory Support
+
+Supervisory support function is mainly used to meet the requirements of supervisory bodies for environment, system, availability, disaster recovery, system operation and maintenance, and compliance of supported functions in DLT system. Due to differences between industry supervisors and supervisory methods, the depth and breadth of functions involved are different. Specific needs include:
+
+- should have a sound and complete supervisory governance system. Through pre-admission control, in-process authority control, ex post facto and other technical means to achieve supervisory objectives, ensure that records cannot be tampered with, be traceable and auditable
+- let supervisory bodies join the DLT network as one of the nodes for immediate supervision. The supervisory node can monitor and audit data integrity, validity and process compliance in real time, intervene in transaction, and stop illegal business
+- data and evidence related to supervision and intervention activities should be recorded and maintained
+- set clear supervisory governance rules. Support rules that are supervised and managed by people and cannot be automatically implemented by technology
+- support rules for the organization or management personnel to conduct supervisory governance in accordance with laws, administrative regulations, departmental rules and regulations, encourage full use of smart contracts and other technologies to effectively support intelligent supervisory operation, and provide supervisory rules for automated implementation
+- save data and evidence relating to systems, resources and performance. These data and evidence include records and logs of all participants' activities and operating environmental conditions, which need to be collected and maintained in a safe manner
+
+### Audit Support
+
+Audit support function is mainly used to achieve audit internal control, responsibility identification, event traceability and other requirements of DLT system, which needs effective technical means together with business sector standards for accurate audit management. Specific requirements include:
+
+- enable conducting pre-audit, concurrent audit and post audit on DLT activities, establish audit indicators such as violation of discipline audit, internal control system audit, performance audit and other contents
+- enable DLT auditors join the DLT network as one of the nodes for real-time audit, or allow the DLT auditor to access to data and evidence in DLT networks on demand or on a regular basis as a third-party outside the DLT network. Encourage non-tampering and traceable characteristics based on DLT technology, make real-time verification on records of audited object and use as audit evidence
+- enable docking and interactions between DLT networks and other related systems, improve audit efficiency and reliability of audit results
+- enable data and evidence related to audit activities. The data and evidence include but are not limited to records and logs of activities and operating environment conditions of all participants in DLT, audit view record of the auditor, audit processes and results information, and avoid leakage of audit information
+
+### Governance Controls
+
 Controls communications of policies and notifications of policy violations and escalation processes for exceptions and grievances.
- Policy Management
+
+### Policy Management
+
 Policy management function provides definition, update and access policies for DLT systems and their management. These policies include DLT systems itself and its business, technology, security, privacy, and authentication.
 Management of policies at all levels of the distributed systems
 
