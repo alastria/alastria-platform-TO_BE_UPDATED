@@ -44,7 +44,7 @@ The DLT Platform layer connects hardware or network infrastructure provided by t
 - Crypto Services
 - Secure Inter Node Communications
 
-##Secure Runtime
+## Secure Runtime
 
 During runtime, a transaction may invoke smart contract functions requiring a secure environment. A secure runtime environment is a hosting environment for server-side DLT business logic. An example is the use of a secure container that contains a set of signed runtime components such as a secure operating system, libraries for DLT-supported programming languages, their respective runtimes, and the like.
 
@@ -71,7 +71,7 @@ Membership Services are services that manage the identity, privacy, confidential
 
 The state management component keeps track of the state of assets which are held on the ledger, updating that state when new transactions are committed to the ledger.
 
-## Consensus Mechanism –
+## Consensus Mechanism
 
 Consensus is a set of rules and procedures that allow the DLT system to maintain and update the distributed ledger and to ensure the trustworthiness of the records in the ledger - i.e. their reliability, authenticity and accuracy.
 Consensus mechanisms are implementations by which consensus is achieved in DLT systems. There are many alternative consensus mechanisms in use in different DLT systems. Examples of consensus mechanisms include Delegated Proof-of-Stake, Paxos algorithm, Practical Byzantine Fault Tolerance, Proof-of-Authority, Proof-of-Burn, Proof-of-Capacity, Proof-of-ownership, Proof-of-stake, Zero knowledge proof, Proof-of-work.
@@ -133,6 +133,135 @@ Non-DLT applications are any applications outside the DLT system with which the 
 
 Off-Ledger data is any data store outside the DLT system that can hold data that relates to the DLT system in some way. An example might be a database holding additional data relating to transactions held on the ledger.
 Off-Ledger Data is a critical component needed to implement proper data privacy functions.
+
+
+# Cross-layer functions
+
+The cross-layer functions support the components across all the functional layers. For example, security is needed for user layer, API layer and DLT Platform layer, therefore security is a cross-layer functional component. Cross layer functions can support other cross layer functions as well. The functions are grouped into Development, Operations & Management, Security, and Governance & Compliance categories.
+
+## Development
+
+Development functional components support the activities of DLT system developer, including application and system implementation development, build management and test management.
+
+### IDE
+
+IDE functional components provide tools for the development of smart contracts, DLT and related applications, including development of support modules. IDE functional components support the use of capabilities provided by DLT operator, including access via APIs, node management and event distribution capabilities. IDEs enable use of functions in the API of the DLT platform layer, as well as the infrastructure layer.
+The IDE component supports the generation of configuration-related configuration metadata for the development of the smart contract; supports the preparation or generation of smart contracts configuration scripts and components used by the operators and nodes operating systems.
+
+### Build Management
+
+Build management functional components are used to build publishable software packages. The package can be submitted to DLT node owner or operator and deployed in production environment. It contains both the software for smart contract implementation and the configuration metadata and configuration scripts.
+Build management features include:
+- support for automated building software packages function
+- provide automated compilation function
+- provide an error message when an error occurs during the build process o implement audit during build process
+- build system that provides multi-language support
+
+### Test Management
+
+Test management functional components support testing of all functions of DLT systems. The components should generate test reports and provide them with system implementation software to the node owner or operator. In general, test is performed in a special independent test environment, which should be a simulation of production environment. Without affecting production, test work can also be carried out in a production environment. A test environment should be provided by DLT operator or partner.
+
+Test management functional components should include at least the following functions:
+- test management components should support the management of test plans, test reports, test cases and so on
+- support automatic generation of test reports
+- when test is conducted under the integration of test environment and production environment
+- production environment should not be affected
+- support testing process automation
+- provide test case library, test database management functions
+
+### Management and Operations
+
+Management and Operations functional components include a set of operational-related management functions, which are used to manage and control DLT capabilities provided to user.
+Management and Operations functional components include:
+- service directory
+- incident management
+- delivery management
+- node management
+- ledger management
+- monitoring
+- update and version management
+
+#### Service directory
+
+Service directory function provides a list of all DLT capabilities, smart contracts, services and/or APIs of a particular DLT system, operator, or node. The list includes / refers to technical information about deployment, provision and operation of DLT smart contract, service or API
+
+#### Incident Management
+
+Incident management function provides the ability to capture incident and problem reports, and manage them through analysis. Incident and problems can be detected and reported by DLT node or DLT operators or DLT user.
+
+#### Delivery Management
+
+Delivery management function provides the management function of DLT system delivery, which is provided in the forms of system implementation and access endpoint. At the same time, this function provides necessary workflows to ensure the elements are provided in correct order
+
+#### Node Management
+
+Node management function provides management of the DLT platform node implementation including performance and availability usually on one logical or virtual system
+Ledger Management – Ledger Management function provides management of the distributed ledger
+DLT System Management – DLT System Management function provides management of DLT systems especially for performance and availability
+Monitoring – Monitoring functions include monitoring, analytics, and automation tools that are used to respond to changes in the platform and environment. This could include responding to changes in the required system capacity and error analytics.
+Update and Version Management – Update and version management functions include management of code bases and implementation artifacts for the nodes and DLT systems
+
+9.1.7.4 Security capabilities
+The function of security layer is mainly to provide security attributes such as authentication, authorization, confidentiality, integrity and accessibility for all the functional layers of the DLT RA and the protocols between nodes. These security features are widely used in user and node identity authentication, transaction protocol design, chained data organization, communication channel encryption, and application data access control.
+Security layer includes the following functions:
+ authentication and identity management
+ security policy management
+ access management
+ PII protection To explain these further:
+ Authentication and Identity Management - The authentication and identity management functions provide user’s identity verification process to determine whether the user has access and usage rights to a resource, thereby enabling the DLT system access control policy to be performed reliably and efficiently.
+The authentication and identity management functional components include the following features:
+o support the establishment of identity management strategy, determine whether
+certification is based on user-known information, user-owned information or user's unique
+physical characteristics
+o support the use of specific identity authentication methods to support identity management
+policies
+o support the establishment of user identity management mechanisms based on identity
+authentication
+ Security Policy Management - The security policy management functions provide permission for users to access to or use a resource, and develop a set of rules that must be followed by all security-related activities in a secure area.
+Security policy management functional components include
+o function to authorize users to access and use resource
+o function to set authorization and security rules
+o functions that authorization and security rules are controlled by security authority
+Access Management - The access management component is used to provide control over access to specific capabilities of the DLT system. This can include access controls applied to the various interfaces in the API layer.
+ PII Protection - The PII protection component provides capabilities to assist the provision of appropriate protection to any PII handled by the DLT system. This can include identification and classification of the PII, the application of encryption, the management of lifecycle for PII (including early deletion of any PII no longer required), providing access to PII for data subjects
+© ISO #### – All rights reserved 19
+ISO #####-#:####(X)
+
+ISO #####-#:####(X)
+9.1.7.5 Governance and Compliance
+Governance and Compliance functional components enable the DLT system to conform to governed and auditable characteristics based on governance and compliance requirements of DLT node owners and operators. Governance can help prevent DLT networks from being outside of laws, regulations and industry rules (like becoming the carrier of money laundering, illegal financing or criminal transactions). They include the following functions:
+ supervisory support
+ audit support
+ governance control
+ policy management
+To explain these further:
+ Supervisory Support
+supervisory support function is mainly used to meet the requirements of supervisory body for environment, system, availability, disaster recovery, system operation and maintenance, and compliance of supported functions in DLT system. Due to differences between industry supervisors and supervisory methods, the depth and breadth of functions involved are different. Specific needs include:
+o should have a sound and complete supervisory governance system. Through pre-admission control, in-process authority control, ex post facto and other technical means to achieve supervisory objectives, ensure that records cannot be tampered with, be traceable and auditable
+o let supervisory body join the DLT network as one of the nodes for immediate supervision. The supervisory node can monitor and audit data integrity, validity and process compliance in real time, intervene in transaction, and stop illegal business
+o data and evidence related to supervision and intervention activities should be recorded and maintained
+o set clear supervisory governance rules. Support rules that are supervised and managed by people and cannot be automatically implemented by technology
+o support rules for the organization or management personnel to conduct supervisory governance in accordance with laws, administrative regulations, departmental rules and regulations, encourage full use of smart contracts and other technologies to effectively support intelligent supervisory operation, and provide supervisory rules for automated implementation
+o save data and evidence relating to systems, resources and performance. These data and evidence include records and logs of all participants' activities and operating environmental conditions, which need to be collected and maintained in a safe manner
+ Audit Support
+Audit support function is mainly used to achieve audit internal control, responsibility identification, event traceability and other requirements of DLT system, which needs effective technical means together with business sector standards for accurate audit management. Specific requirements include:
+20
+© ISO #### – All rights reserved
+o o
+enable conducting pre-audit, concurrent audit and post audit on DLT activities, establish audit indicators such as violation of discipline audit, internal control system audit, performance audit and other contents
+enable DLT auditors join the DLT network as one of the nodes for real-time audit, or allow the DLT auditor to access to data and evidence in DLT networks on demand or on a regular basis as a third-party outside the DLT network. Encourage non-tampering and traceable characteristics based on DLT technology, make real-time verification on records of audited object and use as audit evidence
+
+o enable docking and interactions between DLT networks and other related systems, improve audit efficiency and reliability of audit results
+o enable data and evidence related to audit activities. The data and evidence include but are not limited to records and logs of activities and operating environment conditions of all participants in DLT, audit view record of the auditor, audit processes and results information, and avoid leakage of audit information
+ Governance Controls
+Controls communications of policies and notifications of policy violations and escalation processes for exceptions and grievances.
+ Policy Management
+Policy management function provides definition, update and access policies for DLT systems and their management. These policies include DLT systems itself and its business, technology, security, privacy, and authentication.
+Management of policies at all levels of the distributed systems
+
+
+
+
 
 
 
