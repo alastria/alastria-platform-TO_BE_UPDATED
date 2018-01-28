@@ -44,7 +44,7 @@ The DLT Platform layer connects hardware or network infrastructure provided by t
 - Crypto Services
 - Secure Inter Node Communications
 
-##Secure Runtime
+## Secure Runtime
 
 During runtime, a transaction may invoke smart contract functions requiring a secure environment. A secure runtime environment is a hosting environment for server-side DLT business logic. An example is the use of a secure container that contains a set of signed runtime components such as a secure operating system, libraries for DLT-supported programming languages, their respective runtimes, and the like.
 
@@ -71,7 +71,7 @@ Membership Services are services that manage the identity, privacy, confidential
 
 The state management component keeps track of the state of assets which are held on the ledger, updating that state when new transactions are committed to the ledger.
 
-## Consensus Mechanism –
+## Consensus Mechanism
 
 Consensus is a set of rules and procedures that allow the DLT system to maintain and update the distributed ledger and to ensure the trustworthiness of the records in the ledger - i.e. their reliability, authenticity and accuracy.
 Consensus mechanisms are implementations by which consensus is achieved in DLT systems. There are many alternative consensus mechanisms in use in different DLT systems. Examples of consensus mechanisms include Delegated Proof-of-Stake, Paxos algorithm, Practical Byzantine Fault Tolerance, Proof-of-Authority, Proof-of-Burn, Proof-of-Capacity, Proof-of-ownership, Proof-of-stake, Zero knowledge proof, Proof-of-work.
