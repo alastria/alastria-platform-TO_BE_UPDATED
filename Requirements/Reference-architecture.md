@@ -169,7 +169,7 @@ Test management functional components should include at least the following func
 - support testing process automation
 - provide test case library, test database management functions
 
-### Management and Operations
+## Management and Operations
 
 Management and Operations functional components include a set of operational-related management functions, which are used to manage and control DLT capabilities provided to user.
 Management and Operations functional components include:
@@ -181,54 +181,73 @@ Management and Operations functional components include:
 - monitoring
 - update and version management
 
-#### Service directory
+### Service directory
 
 Service directory function provides a list of all DLT capabilities, smart contracts, services and/or APIs of a particular DLT system, operator, or node. The list includes / refers to technical information about deployment, provision and operation of DLT smart contract, service or API
 
-#### Incident Management
+### Incident Management
 
 Incident management function provides the ability to capture incident and problem reports, and manage them through analysis. Incident and problems can be detected and reported by DLT node or DLT operators or DLT user.
 
-#### Delivery Management
+### Delivery Management
 
 Delivery management function provides the management function of DLT system delivery, which is provided in the forms of system implementation and access endpoint. At the same time, this function provides necessary workflows to ensure the elements are provided in correct order
 
-#### Node Management
+### Node Management
 
 Node management function provides management of the DLT platform node implementation including performance and availability usually on one logical or virtual system
-Ledger Management – Ledger Management function provides management of the distributed ledger
-DLT System Management – DLT System Management function provides management of DLT systems especially for performance and availability
-Monitoring – Monitoring functions include monitoring, analytics, and automation tools that are used to respond to changes in the platform and environment. This could include responding to changes in the required system capacity and error analytics.
-Update and Version Management – Update and version management functions include management of code bases and implementation artifacts for the nodes and DLT systems
 
-9.1.7.4 Security capabilities
+### Ledger Management
+
+Ledger Management function provides management of the distributed ledger
+
+### DLT System Management
+
+DLT System Management function provides management of DLT systems especially for performance and availability
+
+### Monitoring
+
+Monitoring functions include monitoring, analytics, and automation tools that are used to respond to changes in the platform and environment. This could include responding to changes in the required system capacity and error analytics.
+
+### Update and Version Management
+
+Update and version management functions include management of code bases and implementation artifacts for the nodes and DLT systems
+
+## Security capabilities
+
 The function of security layer is mainly to provide security attributes such as authentication, authorization, confidentiality, integrity and accessibility for all the functional layers of the DLT RA and the protocols between nodes. These security features are widely used in user and node identity authentication, transaction protocol design, chained data organization, communication channel encryption, and application data access control.
-Security layer includes the following functions:
- authentication and identity management
- security policy management
- access management
- PII protection To explain these further:
- Authentication and Identity Management - The authentication and identity management functions provide user’s identity verification process to determine whether the user has access and usage rights to a resource, thereby enabling the DLT system access control policy to be performed reliably and efficiently.
-The authentication and identity management functional components include the following features:
-o support the establishment of identity management strategy, determine whether
-certification is based on user-known information, user-owned information or user's unique
-physical characteristics
-o support the use of specific identity authentication methods to support identity management
-policies
-o support the establishment of user identity management mechanisms based on identity
-authentication
- Security Policy Management - The security policy management functions provide permission for users to access to or use a resource, and develop a set of rules that must be followed by all security-related activities in a secure area.
-Security policy management functional components include
-o function to authorize users to access and use resource
-o function to set authorization and security rules
-o functions that authorization and security rules are controlled by security authority
-Access Management - The access management component is used to provide control over access to specific capabilities of the DLT system. This can include access controls applied to the various interfaces in the API layer.
- PII Protection - The PII protection component provides capabilities to assist the provision of appropriate protection to any PII handled by the DLT system. This can include identification and classification of the PII, the application of encryption, the management of lifecycle for PII (including early deletion of any PII no longer required), providing access to PII for data subjects
-© ISO #### – All rights reserved 19
-ISO #####-#:####(X)
+The Security layer includes the following functions:
+- authentication and identity management
+- security policy management
+- access management
+- PII protection
 
-ISO #####-#:####(X)
-9.1.7.5 Governance and Compliance
+### Authentication and Identity Management
+
+The authentication and identity management functions provide user’s identity verification process to determine whether the user has access and usage rights to a resource, thereby enabling the DLT system access control policy to be performed reliably and efficiently.
+The authentication and identity management functional components include the following features:
+- support the establishment of identity management strategy, determine whether certification is based on user-known information, user-owned information or user's unique physical characteristics
+- support the use of specific identity authentication methods to support identity management policies
+- support the establishment of user identity management mechanisms based on identity authentication
+
+### Security Policy Management
+
+The security policy management functions provide permission for users to access to or use a resource, and develop a set of rules that must be followed by all security-related activities in a secure area.
+Security policy management functional components include
+- function to authorize users to access and use resource
+- function to set authorization and security rules
+- functions that authorization and security rules are controlled by security authority
+
+### Access Management
+
+The access management component is used to provide control over access to specific capabilities of the DLT system. This can include access controls applied to the various interfaces in the API layer.
+
+### PII Protection
+
+The PII protection component provides capabilities to assist the provision of appropriate protection to any PII handled by the DLT system. This can include identification and classification of the PII, the application of encryption, the management of lifecycle for PII (including early deletion of any PII no longer required), providing access to PII for data subjects
+
+## Governance and Compliance
+
 Governance and Compliance functional components enable the DLT system to conform to governed and auditable characteristics based on governance and compliance requirements of DLT node owners and operators. Governance can help prevent DLT networks from being outside of laws, regulations and industry rules (like becoming the carrier of money laundering, illegal financing or criminal transactions). They include the following functions:
  supervisory support
  audit support
