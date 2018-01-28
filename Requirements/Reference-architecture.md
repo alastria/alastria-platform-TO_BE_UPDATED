@@ -1,7 +1,7 @@
 # Reference architecture of a blockchain
 ![](https://docs.google.com/drawings/d/e/2PACX-1vQnYqNAfekzwVrKIwAkchLN2D9m99WJdeZNpjgm2xxN_4cldvGrVAgG7QIaW_JN0A0UVnWzC9QobB9W/pub?w=1130&h=660)
 
-
+![](https://docs.google.com/drawings/d/e/2PACX-1vT93ch52Ep-6YkqFiOZpPRUyv5-fDhEwki9itMILAAg6_g3ZF0DaSRu4pGUBc3-z_OudckU4j4Vr_v5/pub?w=1071&h=798)
 
 # Technical Architecture
 
