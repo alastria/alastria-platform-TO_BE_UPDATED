@@ -1,4 +1,4 @@
-1. [Introduction to Alastria](Introduccion-to-Alastria.md)
+1. [Introduction to Alastria](Introduccion-a-Alastria.md)
 1. [Tecnologías a utilizar](Tecnologias-a-utilizar.md)
 1. [Arquitectura de la red blockchain de Alastria](Arquitectura-de-la-red-blockchain-de-Alastria.md)
 1. [Roadmap técnico de la plataforma de Alastria](Roadmap-tecnico-de-la-plataforma-de-Alastria.md)
