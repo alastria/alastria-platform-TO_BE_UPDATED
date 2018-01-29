@@ -54,4 +54,4 @@ RESTFUL API - BeeGo: https://beego.me/
 
 ## URL forum discussion
 
-TBD
+https://alastriaplatform.invisionzone.com/topic/8-aip-3-node-monitoring-orchestration/
