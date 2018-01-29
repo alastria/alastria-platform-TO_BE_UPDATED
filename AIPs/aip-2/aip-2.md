@@ -4,7 +4,7 @@
     Title: `Node monitoring`
     Author: `Marcos Serradilla`
     Type: `Monitor`
-    Status: `Accepted`
+    Status: `Final`
     Created: `11-01-2017`
 
 
