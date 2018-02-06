@@ -4,7 +4,7 @@
     Title: `Node monitoring orchestration`
     Author: `Eduardo Sánchez`
     Type: `Monitor`
-    Status: `Draft`
+    Status: `Acccepted`
     Created: `25-01-2017`
 
 
