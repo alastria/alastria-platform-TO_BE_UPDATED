@@ -1,4 +1,4 @@
-# 1 General requirements
+# 1.- General requirements
 
 ## 1.1 Based on OpenSource of wide acceptance in the market
 1. Alastria will not develop its own blockchain
