@@ -12,10 +12,10 @@ To minimize the risks of using software will will stop being developed in the fu
 2. Ecosystem of applications using the software as wide as possible
 3. Ecosystem of knowledge about the software as wide as possible
 
-## 1.2. Alastria should be based on general-purpose and multi-industry platforms
+## 1.3. Alastria should be based on general-purpose and multi-industry platforms
 Alastria has to support all the different use cases that can appear in a multi-industry blockchain country network, so Alastria will avoid any software which is specific to one industry or is too specialised. That means that there may be some very specialized use cases that are not supported by Alastria, at least at the beginning. The challenge here is to be able to interoperate between different blockchain networks. One possibility being actively investigated is the ability to run in parallel two (or more) blockchain networks with different technology, to be able to support a wider spectrum of use cases.
 
-## 1.3. Alastria will allow and facilitate regulatory compliance by the members, in particular:
+## 1.4. Alastria will allow and facilitate regulatory compliance by the members, in particular:
 (In Spanish because we are currently focusing on the specific problems of Spanish regulation).
 1. Reglamento General de Protección de Datos (RGPD)
 2. Ley de Servicio de Sociedad de la Información y Comercio Electrónico (LSSI)
