@@ -1,2 +1,4 @@
-remote_theme: nielsenramon/chalk
+theme: jekyll-theme-minimal
 title: Alastria Core Platform
+plugins:
+  - jekyll-sitemap
