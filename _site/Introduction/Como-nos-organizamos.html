@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=b4c67f9aecbed8c2ee647a625c829c12feb2b5bf">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Organización (a efectos de plataforma) | Alastria Core Platform</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Organización (a efectos de plataforma)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The infrastructure that powers the Alastria Blockchain Network" />
+<meta property="og:description" content="The infrastructure that powers the Alastria Blockchain Network" />
+<link rel="canonical" href="http://localhost:4000/Introduction/Como-nos-organizamos.html" />
+<meta property="og:url" content="http://localhost:4000/Introduction/Como-nos-organizamos.html" />
+<meta property="og:site_name" content="Alastria Core Platform" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/Introduction/Como-nos-organizamos.html","description":"The infrastructure that powers the Alastria Blockchain Network","@type":"WebPage","headline":"Organización (a efectos de plataforma)","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="http://github.com/alastria/alastria-platform">View on GitHub</a>
+
+          <h1 id="project_title">Alastria Core Platform</h1>
+          <h2 id="project_tagline">The infrastructure that powers the Alastria Blockchain Network</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="organización-a-efectos-de-plataforma">Organización (a efectos de plataforma)</h1>
+<p><img src="https://docs.google.com/drawings/d/e/2PACX-1vS81QkcRyx8O-md-GvWumPxoLbXlRw3psp_FxzzWFIr_pHDNHPHlCoKLikWXkuE0TsdicwWLfEEspga/pub?w=1391&amp;h=566" alt="" /></p>
+
+<h3 id="1-entidades-miembros-de-alastria">1. Entidades miembros de Alastria</h3>
+<p>Despliegan y mantienen sus nodos (validadores y/o regulares) conforme a la política técnica establecida por Alastria; desarrollan y despliegan sus propias aplicaciones distribuidas a través de sus nodos regulares</p>
+<h3 id="2-nodos-regulares">2. Nodos regulares</h3>
+<p>Se conectan voluntariamente a los nodos validadores (que actúan como “bootnodes”); Permiten el despliegue de aplicaciones distribuídas y el acceso general a la red de blockchain; cumplen las políticas técnicas establecidas por Alastria</p>
+<h3 id="3-nodos-validadores">3. Nodos validadores</h3>
+<p>Intervienen como validadores (voters / blockmakers) en los algoritmos de consenso de la red de blockchain; mantienen copias integrales del blockchain y toda su historia; actúan como “bootnodes” permitiendo la conexión a los otros nodos, según la lista de nodos permisionados establecida por Alastria; cumplen las politicas técnicas establecidas por Alastria</p>
+<h3 id="4-equipo-técnico-core-de-alastria">4. Equipo técnico “core” de Alastria</h3>
+<p>Crea las herramientas básicas de despliegue y monitorización de la red; monitoriza activamente la red y estado de todos sus nodos; gestiona el permisionamiento de los nodos en función de la política técnica establecida; da soporte a la comunidad sobre las cuestiones técnicas de la plataforma</p>
+<h3 id="5-comité-técnico-de-alastria">5. Comité Técnico de Alastria</h3>
+<p>Establece la política técnica y la estrategia técnica general de la plataforma; supervisa al equipo técnico “core”, y decide sobre sus propuestas para establecer la arquitectura de red; autoriza a los miembros de la red a desplegar y mantener nodos validadores; decide las actuaciones técnicas a realizar en función de las situaciones que se presenten</p>
+<h3 id="6-comité-de-resiliencia">6. Comité de Resiliencia</h3>
+<p>Valida las propuestas arquitecturales y supervisa la operativa desde un punto de vista de resiliencia</p>
+<h3 id="7-junta-directiva-de-alastria">7. Junta directiva de Alastria</h3>
+<p>Delega en el comité técnico las decisiones referentes a los aspectos técnicos de la red; refrenda las decisiones de carácter estratégico y/o de especial importancia, a su criterio</p>
+
+<h1 id="nodos-regulares-normas-de-participación-aka-adhesión-a-la-política-técnica">Nodos regulares: Normas de participación (a.k.a. adhesión a la política técnica)</h1>
+<p><strong>Cada miembro de Alastria que quiera desplegar un nodo regular (no validador) se compromete a:</strong></p>
+<ul>
+  <li>Designar una persona de contacto técnico (“administrador del nodo”), responsable de la administración del nodo de Alastria</li>
+  <li>Responder a los requerimientos de actuación técnica que se soliciten desde el equipo técnico “core” de Alastria, en un plazo de 72 horas hábiles como máximo</li>
+  <li>Utilizar las versiones de los clientes blockchain especificadas en el repositorio oficial de Alastria, y desplegar y permisionar las herramientas de monitorización que el equipo técnico de Alastria determine</li>
+  <li>No permisionar ni permitir conectarse a otros nodos blockchain no autorizados en la lista oficial mantenida por Alastria</li>
+  <li>Limitar la carga de la red dentro de los límites establecidos en cada momento dentro de la política técnica, inicialmente 25.000 transacciones al día. Y en caso de necesitar superar este límite, solicitar y obtener una autorización por parte del comité técnico de Alastria a través del canal establecido en dicha política</li>
+  <li>Cumplir todas las políticas de Alastria. En concreto la política legal que establece que ningún miembro desplegará ni permitirá el despliegue a través su(s) nodo(s) de aplicaciones, productos o negocios que no cumplan con la regulación y legislación aplicable, o que puedan suponer, a juicio de la junta directiva de Alastria, un riesgo reputacional relevante</li>
+  <li>Comunicar inmediatamente al equipo técnico de Alastria las posibles vulnerabilidades que se pudieran encontrar en la plataforma, y no explotarlas en beneficio propio</li>
+</ul>
+
+<p><strong>En caso de incumplimiento de alguna de estas normas, el equipo técnico de Alastria junto con los nodos validadores procederán al despermisionamiento y consiguiente desconexión del nodo regular, momento en el cual el miembro dueño del nodo podrá solicitar su repermisionamiento al Comité Técnico de Alastria previa presentación de un plan de resolución del problema detectado</strong></p>
+
+<h1 id="nodos-validadores-normas-de-participación-aka-adhesión-a-la-política-técnica">Nodos validadores: Normas de participación (a.k.a. adhesión a la política técnica)</h1>
+<p><strong>Cada miembro de Alastria autorizado por el comité técnico para desplegar un nodo validador se compromete a:</strong></p>
+<ul>
+  <li>Designar una persona de contacto técnico (“administrador del nodo validador”), responsable de la administración del nodo</li>
+  <li>Responder a los requerimientos de actuación técnica que se soliciten desde el equipo técnico “core” de Alastria, en un plazo de 24 horas como máximo. En particular, proceder a actualizar la lista de nodos permisionados cuando así se solicite, dentro de este plazo</li>
+  <li>Utilizar las versiones de los clientes blockchain especificadas en el repositorio oficial de Alastria, y desplegar y permisionar las herramientas de monitorización que el equipo técnico de Alastria determine</li>
+  <li>Permitir la conexión de cuantos nodos se especifiquen en la lista oficial autorizada por Alastria, permisionando los enodes, direcciones IP y puertos necesarios (i.e. actuar como “bootnodes” para todos los clientes blockchain autorizados por Alastria)</li>
+  <li>Dotar a los servidores (virtuales o físicos) de suficiente capacidad de proceso, memoria y espacio en disco para su correcto funcionamiento como nodos validadores y “bootnodes” en función de la magnitud de la red de Alastria en cada momento, y conforme a las especificaciones concretas que se vayan detallando  dentro de la política técnica. En concreto, se requiere que los nodos validadores tengan suficiente espacio y capacidad de proceso para mantener todo el histórico del blockchain de Alastria desde su comienzo (i.e. sin hacer “tree prunning”)</li>
+  <li>Mantener los servidores en régimen de alta disponibilidad, 24/7, según las condiciones estándar detalladas en la política técnica</li>
+  <li>No utilizar ni permitir utilizar los nodos validadores para la instanciación de smart contracts o el envío de transacciones</li>
+  <li>Comunicar inmediatamente al equipo técnico de Alastria las posibles vulnerabilidades que se pudieran encontrar en la plataforma, y no explotarlas en beneficio propio</li>
+</ul>
+
+<p><strong>En caso de incumplimiento de alguna de estas normas, el equipo técnico de Alastria junto con los otros nodos validadores procederán al despermisionamiento y consiguiente desconexión del nodo validador.</strong></p>
+
+<p><strong>El compromiso de lanzamiento y operación del nodo validador es voluntario e indefinido, y podrá revocarse voluntariamente mediante comunicación fehaciente al Comité Técnico de Alastria con un preaviso de un mes.</strong></p>
+
+<h1 id="asociado-general-alastria-normas-de-participación-aka-adhesión-a-la-política-técnica">Asociado general Alastria: Normas de participación (a.k.a. adhesión a la política técnica)</h1>
+<p><strong>Alastria, a través de su equipo técnico “core” gobernado por su Comité Técnico:</strong></p>
+<ul>
+  <li>Promoverá el desarrollo, evolución y mantenimiento de la arquitectura de la red de blockchain de Alastria, así como los scripts y herramientas de soporte para el despliegue de nodos por parte de sus socios, y de las herramientas de monitorización necesarias</li>
+  <li>Aceptará la participación de los miembros de Alastria en la red, autorizando y actualizando las listas oficiales con los identificadores de los nodos de los miembros que así lo soliciten, según el procedimiento establecido</li>
+  <li>Organizará la monitorización continua de la red, y velará por el cumplimiento de la política técnica que se establezca en cada momento, detectando en la medida de lo posible los incumplimientos que se produzcan, y realizando las acciones correctivas necesarias para salvaguardar el buen funcionamiento de la red</li>
+  <li>Proveer un soporte técnico razonable a los socios de Alastria, en horario laboral, y mediante las herramientas de colaboración establecidas</li>
+  <li>Recibirá las alertas, comunicaciones de problemas y posibles vulnerabilidades, y sugerencias técnicas que los socios de Alastria puedan enviar al equipo técnico por los canales establecidos, y realizará el mayor esfuerzo posible para atenderlas en la medida de lo razonablemente posible, velando siempre por la integridad y utilidad de la red, y por el beneficio para sus socios</li>
+</ul>
+
+<hr />
+<p>Siguiente: <a href="https://github.com/jesus-alastria/alastria-node/wiki/Alguna-informaci%C3%B3n-%C3%BAtil">Alguna información útil</a></p>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Alastria Core Platform maintained by <a href="http://github.com/alastria">alastria</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>

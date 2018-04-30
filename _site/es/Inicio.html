@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=b4c67f9aecbed8c2ee647a625c829c12feb2b5bf">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Grupo de Trabajo de Plataforma Alastria | Alastria Core Platform</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Grupo de Trabajo de Plataforma Alastria" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The infrastructure that powers the Alastria Blockchain Network" />
+<meta property="og:description" content="The infrastructure that powers the Alastria Blockchain Network" />
+<link rel="canonical" href="http://localhost:4000/es/Inicio.html" />
+<meta property="og:url" content="http://localhost:4000/es/Inicio.html" />
+<meta property="og:site_name" content="Alastria Core Platform" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/es/Inicio.html","description":"The infrastructure that powers the Alastria Blockchain Network","@type":"WebPage","headline":"Grupo de Trabajo de Plataforma Alastria","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="http://github.com/alastria/alastria-platform">View on GitHub</a>
+
+          <h1 id="project_title">Alastria Core Platform</h1>
+          <h2 id="project_tagline">The infrastructure that powers the Alastria Blockchain Network</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="grupo-de-trabajo-de-plataforma-alastria">Grupo de Trabajo de Plataforma Alastria</h1>
+
+<ol>
+  <li>
+    <p>OBJETIVOS Y ALCANCE DE ESTE DOCUMENTO</p>
+  </li>
+  <li>
+    <p>INTRODUCCIÓN</p>
+
+    <ol>
+      <li><a href="/es/Introduccion/Introduccion-a-Alastria.html">Introducción a Alastria</a></li>
+      <li><a href="/es/Introduccion/Tecnologias-a-utilizar.html">Tecnologías a utilizar</a></li>
+      <li><a href="/es/Introduccion/Arquitectura-de-la-red-blockchain-de-Alastria.html">Arquitectura de la red blockchain de Alastria</a></li>
+      <li><a href="/es/Introduccion/Roadmap-tecnico-de-la-plataforma-de-Alastria.html">Roadmap técnico de la plataforma de Alastria</a></li>
+      <li><a href="/es/Introduccion/Como-nos-organizamos.html">Cómo nos organizamos</a></li>
+      <li><a href="/es/Introduccion/Alguna-informacion-util.html">Alguna información útil</a></li>
+      <li><a href="AIPs/aips.md">Alastria Improvement Proposals (AIPs)</a></li>
+    </ol>
+  </li>
+  <li>
+    <p>REQUERIMIENTOS DE LA PLATAFORMA</p>
+
+    <ol>
+      <li>Requerimientos generales
+        <ol>
+          <li>Basado en software OpenSource de amplia aceptación en el mercado
+            <ol>
+              <li>No se desarrolla un blockchain en Alastria</li>
+              <li>No se admiten componentes propietarios</li>
+              <li>Plataforma construida por comunidades OpenSource lo más grandes y diversas posible</li>
+            </ol>
+          </li>
+          <li>Ecosistema de usuarios del software lo más amplia posible
+            <ol>
+              <li>Ecosistema de desarrolladores usuarios del software lo más amplio posible</li>
+              <li>Ecosistema de aplicaciones usando el software lo más amplio posible</li>
+              <li>Ecosistema de conocimiento sobre la plataforma lo más amplio posible</li>
+            </ol>
+          </li>
+          <li>Basado en plataformas de propósito general y multi-industria</li>
+          <li>Permitir y facilitar el cumplimiento regulatorio por parte de los asociados, en concreto:
+            <ol>
+              <li>Reglamento General de Protección de Datos (RGPD)</li>
+              <li>Ley de Servicio de Sociedad de la Información y Comercio Electrónico (LSSI)</li>
+              <li>Reglamento de prevención del blanqueo de capitales y de la financiación del terrorismo</li>
+              <li>Normas y recomendaciones del Consejo Nacional de Ciberseguridad</li>
+              <li>Otros</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="/es/Requerimientos/Requerimientos-tecnicos.html">Requerimientos Técnicos</a>
+        <ol>
+          <li>Privacidad
+            <ol>
+              <li>Privacidad de la actividad transaccional</li>
+              <li>Privacidad de los datos</li>
+            </ol>
+          </li>
+          <li>Tolerancia a fallos
+            <ol>
+              <li>Byzantine Fault Tolerance</li>
+              <li>Mecanismo modular de modificar algoritmos de consenso</li>
+            </ol>
+          </li>
+          <li>Rendimiento
+            <ol>
+              <li>Alrededor de 1.000 tx/s</li>
+              <li>Sin degradación de rendimiento por sobrecarga</li>
+              <li>Capacidad computacional para validación de bloques independiente del tiempo o tamaño del Blockchain</li>
+              <li>Tiempo requerido para acceso a datos del blockchain constante</li>
+              <li>Soporta “Pruning” del Blockchain, para facilitar “clientes ligeros”</li>
+            </ol>
+          </li>
+          <li>Settlement Finality
+            <ol>
+              <li>“Transaction finality” debe ser determinista y considerada final en un solo bloque</li>
+            </ol>
+          </li>
+          <li>Sin criptomonedas embebidas: costes de transacción cero</li>
+          <li>Anti-spam
+            <ol>
+              <li>Mecanismo anti-spam para proteger la red de nodos y direcciones que generan excesiva carga</li>
+              <li>Mecanismo para parar rápidamente a entidades iniciando transacciones por encima de un nivel determinado</li>
+            </ol>
+          </li>
+          <li>Permisionado
+            <ol>
+              <li>Permisionado de nodos individuales y de direcciones de participantes</li>
+              <li>Whitelist y blacklist de nodos y direcciones de participantes</li>
+            </ol>
+          </li>
+          <li>Maximizar la descentralización, a pesar de ser una red permisionada</li>
+          <li>Conectividad entre nodos
+            <ol>
+              <li>Minimizar las necesidades de conectividad directa punto a punto entre los nodos participantes de la red</li>
+              <li>Minimizar las necesidades de conectividad directa punto a punto entre los nodos participantes en transacciones y contratos privados</li>
+            </ol>
+          </li>
+          <li>Sincronización y Disaster Recovery
+            <ol>
+              <li>Mecanismo de sincronización rápida del blockchain para nodos que se conectan por primera vez, tanto de la parte pública como de la privada</li>
+              <li>Mecanismo que permita inicializar un nodo nuevo a partir del backup de otro nodo, hasta un bloque determinado</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>ARQUITECTURA TÉCNICA
+    <ol>
+      <li>General
+        <ol>
+          <li>Plataforma</li>
+          <li>Estructura</li>
+          <li>Arquitectura Lógica Nodos</li>
+          <li>Capa de comunicación</li>
+          <li>Capa de Servicios</li>
+          <li>Capa de Datos</li>
+          <li>Capa de Conectividad</li>
+          <li>Puertos conocidos</li>
+        </ol>
+      </li>
+      <li>
+        <p>Entornos</p>
+
+        <ol>
+          <li>Entorno Desarrollo (descripción/características)</li>
+          <li>Equipo (máquina) de desarrollo (recomendaciónes)</li>
+          <li>Proceso de desarrollo</li>
+          <li>Proceso de Pruebas (descripción/características)</li>
+          <li>Entornos Preproducción/Producción (descripción/características)</li>
+          <li>Acceso usuario</li>
+          <li>Estimación del Sizing Nodos por tipos de nodo</li>
+          <li>Base de datos</li>
+          <li>Almacenamiento</li>
+          <li>Servidor de aplicaciones</li>
+          <li>Alta disponibilidad</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>ARQUITECTURA DE SEGURIDAD
+    <ol>
+      <li>General
+        <ol>
+          <li>Roles</li>
+          <li>Seguridad acceso a Fuentes de Datos</li>
+          <li>Configuración de cifrado</li>
+          <li>Almacén de Credenciales</li>
+          <li>Seguridad transacciones</li>
+          <li>Datos - Cifrado</li>
+          <li>Datos - Privacidad</li>
+          <li>Datos - Auditoría</li>
+          <li>Red - Autenticación</li>
+          <li>Red - Gestión</li>
+          <li>Red - Autorizaciones</li>
+          <li>Puertos conocidos</li>
+          <li>Bastionado de equipos y electrónica de red</li>
+          <li>Filtrado de tráfico</li>
+        </ol>
+      </li>
+      <li>Certificados
+        <ol>
+          <li>Gestión de certificados</li>
+          <li>Autoridad de Certificación</li>
+          <li>Firma Digital de documentos</li>
+          <li>Certificados para Servidores Web</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>ARQUITECTURA DE INTEGRACION
+    <ol>
+      <li>Interacción de Alastria con sistemas backend/core de negocio</li>
+      <li>Interacción de Alastria con otras redes (interoperabilidad)</li>
+      <li>Interacción de Alastria con otros servicios (por ejemplo almacenamiento)</li>
+      <li>Interacción con otras tecnologías</li>
+      <li>Conexiones con Bases de Datos (por ejemplo cache de transacciones)</li>
+      <li>APIs para acceder a los servicios proporcionados</li>
+      <li>Protocolos de conexión/integración Soportados
+    8. Intercambio de Ficheros (por ejemplo de configuración de los nodos)</li>
+    </ol>
+  </li>
+  <li>ARQUITECTURA DE DESARROLLO
+    <ol>
+      <li>General
+        <ol>
+          <li>Estructura de Aplicaciones/smart contract</li>
+          <li>Lenguaje de desarrollo</li>
+          <li>Metodología de Desarrollo</li>
+          <li>Modelo de Datos</li>
+          <li>Interfaz de usuario</li>
+          <li>Tecnologías de Creación de Interfaz de Usuario</li>
+          <li>Control de Versiones</li>
+          <li>Paso entre entornos</li>
+          <li>Jobs</li>
+        </ol>
+      </li>
+      <li>Pruebas
+        <ol>
+          <li>Unitarias de nodo</li>
+          <li>Integradas de nodo</li>
+          <li>Integradas de red</li>
+          <li>Stress de nodo</li>
+          <li>Stress de red</li>
+          <li>Seguridad</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>INSTALACIÓN Y CONFIGURACIÓN DE NODOS
+    <ol>
+      <li>Requerimientos previos a la instalación</li>
+      <li>Instalación de Nodo Alastria</li>
+      <li>Descarga de los componentes</li>
+      <li>Instalación de los componentes</li>
+      <li>Asignación de Roles</li>
+      <li>Alta del nuevo nodo en Validadores o Regulares</li>
+      <li>Conectividad con Nodos de terceros</li>
+    </ol>
+  </li>
+  <li>POLITICA DE DESPLIEGUE Y MANTENIMIENTO
+    <ol>
+      <li>Despliegue
+        <ol>
+          <li>Tareas previas de despliegue</li>
+          <li>Gestión de incidencias</li>
+          <li>Gestión Incidencias de Usuario</li>
+          <li>Gestión Incidencias de Producto</li>
+          <li>Políticas de actualización</li>
+          <li>Aplicación de parches</li>
+          <li>Plan de cambio de versión</li>
+        </ol>
+      </li>
+      <li>Operación
+        <ol>
+          <li>ANS e Indicadores de operación</li>
+          <li>Procedimientos de Back Up</li>
+        </ol>
+      </li>
+      <li>Procedimientos rutinarios
+        <ol>
+          <li>Logs: Revisión/Protección/Retención</li>
+          <li>Auditoria</li>
+        </ol>
+      </li>
+      <li>Monitorización
+        <ol>
+          <li>Monitorización común en los elementos de red</li>
+          <li>Monitorización de la capacidad de los recursos</li>
+          <li>Monitorización de la disponibilidad</li>
+          <li>Transferencia de ficheros</li>
+          <li>Conexiones B2B</li>
+          <li>Certificados digitales</li>
+          <li>Servidores Web</li>
+          <li>Conexiones de usuarios desde el exterior</li>
+          <li>Servidores y Electrónica de Red</li>
+          <li>Control de acceso</li>
+          <li>Acceso de administración a los SSII</li>
+          <li>Usuarios especiales</li>
+          <li>Entorno LAN</li>
+          <li>Informes de gestión de vulnerabilidades</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>GLOSARIO DE TÉRMINOS</li>
+</ol>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Alastria Core Platform maintained by <a href="http://github.com/alastria">alastria</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>

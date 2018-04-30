@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=b4c67f9aecbed8c2ee647a625c829c12feb2b5bf">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>General requirements | Alastria Core Platform</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="General requirements" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The infrastructure that powers the Alastria Blockchain Network" />
+<meta property="og:description" content="The infrastructure that powers the Alastria Blockchain Network" />
+<link rel="canonical" href="http://localhost:4000/Requirements/Platform-requirements.html" />
+<meta property="og:url" content="http://localhost:4000/Requirements/Platform-requirements.html" />
+<meta property="og:site_name" content="Alastria Core Platform" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/Requirements/Platform-requirements.html","description":"The infrastructure that powers the Alastria Blockchain Network","@type":"WebPage","headline":"General requirements","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="http://github.com/alastria/alastria-platform">View on GitHub</a>
+
+          <h1 id="project_title">Alastria Core Platform</h1>
+          <h2 id="project_tagline">The infrastructure that powers the Alastria Blockchain Network</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="1-general-requirements">1. General requirements</h1>
+
+<h2 id="11-based-on-opensource-of-wide-acceptance-in-the-market">1.1. Based on OpenSource of wide acceptance in the market</h2>
+<p>To minimize as much as possible any dependencies on any specific vendor. In particular:</p>
+<ol>
+  <li>Alastria will not develop its own blockchain, but will use a widely used one.</li>
+  <li>Alastria will not incorporate any proprietary components or force to the members to use any proprietary component.</li>
+  <li>The software used by Alastria should be built by an OpenSource community as wide and as diverse as possible.</li>
+</ol>
+
+<h2 id="12-the-ecosystem-of-users-of-the-software-should-be-as-wide-as-possible">1.2. The ecosystem of users of the software should be as wide as possible</h2>
+<p>To minimize the risks of using software will will stop being developed in the future. It also makes sure that the innovation rate is high and is also evolving rapidly. In particular:</p>
+<ol>
+  <li>Ecosystem of developers using the software as wide as possible</li>
+  <li>Ecosystem of applications using the software as wide as possible</li>
+  <li>Ecosystem of knowledge about the software as wide as possible</li>
+</ol>
+
+<h2 id="13-alastria-should-be-based-on-general-purpose-and-multi-industry-platforms">1.3. Alastria should be based on general-purpose and multi-industry platforms</h2>
+<p>Alastria has to support all the different use cases that can appear in a multi-industry blockchain country network, so Alastria will avoid any software which is specific to one industry or is too specialised. That means that there may be some very specialized use cases that are not supported by Alastria, at least at the beginning. The challenge here is to be able to interoperate between different blockchain networks. One possibility being actively investigated is the ability to run in parallel two (or more) blockchain networks with different technology, to be able to support a wider spectrum of use cases.</p>
+
+<h2 id="14-alastria-will-allow-and-facilitate-regulatory-compliance-by-the-members-in-particular">1.4. Alastria will allow and facilitate regulatory compliance by the members, in particular:</h2>
+<p>(In Spanish because we are currently focusing on the specific problems of Spanish regulation).</p>
+<ol>
+  <li>Reglamento General de Protección de Datos (RGPD)</li>
+  <li>Ley de Servicio de Sociedad de la Información y Comercio Electrónico (LSSI)</li>
+  <li>Reglamento de prevención del blanqueo de capitales y de la financiación del terrorismo</li>
+  <li>Normas y recomendaciones del Consejo Nacional de Ciberseguridad</li>
+  <li>Others</li>
+</ol>
+
+<h1 id="2-technical-requirements">2. Technical requirements</h1>
+
+<h2 id="21-privacy">2.1. Privacy</h2>
+
+<h3 id="211-privacy-of-transactional-activity">2.1.1. Privacy of Transactional Activity</h3>
+
+<p>The members participating in private contracts or transactions should have total privacy of their activity with respect to the other members of Alastria. That is, a member should not be able to see the private activity of any other member if it does not participate itself in that activity. This point does not refer just to data visibility, but also to the actual transactional activity.</p>
+
+<h3 id="212-privacy-of-data">2.1.2. Privacy of Data</h3>
+
+<h4 id="2121-no-pii-data-personally-identifiable-information-should-be-stored-in-the-blockchain">2.1.2.1. No PII data (Personally identifiable information) should be stored in the Blockchain</h4>
+
+<p>Alastria can not enforce this just with technical means, so this is more a recommendation to the members. In general, all sensitive data should be stored off-chain, and Alastria will not implement anything that forces sensitive information to be stored in the blockchain.</p>
+
+<h4 id="2122-reference-architecture-for-data-storage">2.1.2.2. Reference architecture for data storage</h4>
+
+<p>Alastria should not force the members to store their data in any specific storage system. Each member should be able to decide which storage system they want to use for each specific type of data items they handle. However, Alastria will provide an architecture and reference implementation that can facilitate to the members and efficient, interoperable and secure storage system.</p>
+
+<ul>
+  <li>Some data could be stored in mobile devices owned by the user.</li>
+  <li>Some data could be stored in systems like Constellation from Quorum.</li>
+  <li>Some data could be stored in distributed storage systems without access control, like IPFS.</li>
+  <li>Some data could be stored in non-distributed storage systems with access control, like WebDAV.</li>
+  <li>Some data could be stored in the current systems that act like custodians (eg. banking data, health, ect).</li>
+</ul>
+
+<h2 id="22-fault-tolerance">2.2. Fault Tolerance</h2>
+
+<h3 id="221-byzantine-fault-tolerance">2.2.1. Byzantine Fault Tolerance</h3>
+
+<p>The system should tolerate attacks from a given number (limited) of nodes and participants behaving maliciously in a deliberate manner.</p>
+
+<h3 id="222-modular-mechanism-to-upgrade-consensus-algorithms">2.2.2. Modular mechanism to upgrade consensus algorithms</h3>
+
+<p>Consensus algorithms are evolving very fast. The system should allow to incorporate easily new algorithms, if they are considered adequate for the needs of Alastria.</p>
+
+<h2 id="23-performance">2.3. Performance</h2>
+
+<ol>
+  <li>Throughput around 1.000 tx/s</li>
+  <li>Without performance degradation due to transaction overload.</li>
+  <li>Computational load required for validation of blocks should be independent from time or size of the blockchain.</li>
+  <li>Time required for data access from blockchain should be constant.</li>
+  <li>Should support “pruning” of the blockchain, to facilitate “light clients”.</li>
+</ol>
+
+<h2 id="24-settlement-finality">2.4. Settlement Finality</h2>
+
+<ol>
+  <li>Transaction finality should be deterministic and considered final in one block.</li>
+</ol>
+
+<h2 id="25-without-embedded-cryptocurrencies">2.5. Without embedded cryptocurrencies</h2>
+
+<p>In order to achieve zero or very low and predictable transaction costs (non-zero transaction costs could be required for anti-spam and network-protection mechanisms).</p>
+
+<h2 id="26-anti-spam">2.6. Anti-spam</h2>
+
+<ol>
+  <li>Anti-spam mechanism to protect the network from nodes and participants that generate excessive load.</li>
+  <li>Mechanism to stop immediately entities which initiate transactions above a certain level</li>
+</ol>
+
+<h2 id="27-permissioning">2.7. Permissioning</h2>
+
+<ol>
+  <li>Permissioning of individual nodes and of participant addresses</li>
+  <li>Whitelist and blacklist of nodes and participant addresses</li>
+</ol>
+
+<h2 id="28-maximise-decentralisation">2.8. Maximise decentralisation</h2>
+
+<p>The objective of Alastria is to be as much as possible a public network, in contrast to a private consortium. When adopting any decision, the option chosen should be the one which maximises decentralisation, assuming that the rest of requirements are achieved.</p>
+
+<h2 id="29-inter-node-connectivity">2.9. Inter-node connectivity</h2>
+
+<ol>
+  <li>Minimise the need for direct point-to-point connectivity between participant nodes.</li>
+  <li>Minimise the need for direct point-to-point connectivity between participant nodes in private transactions and contracts.</li>
+</ol>
+
+<h2 id="210-synchronisation-and-disaster-recovery">2.10. Synchronisation and Disaster Recovery</h2>
+
+<ol>
+  <li>Mechanism for fast synchronisation of the blockchain for nodes which connect for the first time, both for the public and the private parts.</li>
+  <li>Mechanism that allows starting a new node from the backup of another node, till a given block.</li>
+</ol>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Alastria Core Platform maintained by <a href="http://github.com/alastria">alastria</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>

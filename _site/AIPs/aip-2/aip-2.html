@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=b4c67f9aecbed8c2ee647a625c829c12feb2b5bf">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Preamble | Alastria Core Platform</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Preamble" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The infrastructure that powers the Alastria Blockchain Network" />
+<meta property="og:description" content="The infrastructure that powers the Alastria Blockchain Network" />
+<link rel="canonical" href="http://localhost:4000/AIPs/aip-2/aip-2.html" />
+<meta property="og:url" content="http://localhost:4000/AIPs/aip-2/aip-2.html" />
+<meta property="og:site_name" content="Alastria Core Platform" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/AIPs/aip-2/aip-2.html","description":"The infrastructure that powers the Alastria Blockchain Network","@type":"WebPage","headline":"Preamble","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="http://github.com/alastria/alastria-platform">View on GitHub</a>
+
+          <h1 id="project_title">Alastria Core Platform</h1>
+          <h2 id="project_tagline">The infrastructure that powers the Alastria Blockchain Network</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AIP: `AIP-2`
+Title: `Node monitoring`
+Author: `Marcos Serradilla`
+Type: `Monitor`
+Status: `Final`
+Created: `11-01-2017`
+</code></pre></div></div>
+
+<h2 id="description">Description</h2>
+
+<p>The monitoring tool must be able to maintain and update the infromación of a node according to the administrative needs of the network.</p>
+
+<p>Thus MIMO, collect monitoring information to identify possible overloads, or malicious modifications in the installation of the node, etc.</p>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>Some administrative operations on the node can be very repetitive and/or urgent to undertake, to expedite this whole process, it is proposed to develop an application that allows the technical team of Alastria to perform unattended operations along the Network.</p>
+
+<h2 id="specification">Specification</h2>
+
+<p>Proposed User Stories:</p>
+
+<ol>
+  <li>
+    <p>As a node manager I want to pre-authorize the execution of any of the commands that potentially allow to change something in my node.</p>
+  </li>
+  <li>
+    <p>As Alastria core technical team I want the configuration files to be updated in order to meet the demands of highs in the network.</p>
+  </li>
+  <li>
+    <p>As an Alastria core technical team I want to be able to confirm the update status of the configuration files in order to verify the status.</p>
+  </li>
+  <li>
+    <p>As an Alastria core technical team I want to be able to ask the administrators of the validator nodes to restart the Geth and constellation-nodes processes to be able to meet the demands of network outputs.</p>
+  </li>
+  <li>
+    <p>As an Alastria core technical team I want to be able to confirm the status of the Geth and constellation processes, including the date of the last release in order to meet the demands of network outputs.</p>
+  </li>
+  <li>
+    <p>As an Alastria core technical team I want the RPC API/API port to be accessed Cakeshop to obtain monitoring information in read mode.</p>
+  </li>
+  <li>
+    <p>As a technical team of Alastria I want that you can verify the version of the binaries and tools used to be able to request your update if necessary.</p>
+  </li>
+  <li>
+    <p>As a technical team of Alastria I want that when a pull on GitHub is done the relevant operation to be able to streamline the management processes.</p>
+  </li>
+  <li>
+    <p>As an Alastria core technical team I want you to be able to access the system monitoring information to get system performance information.</p>
+  </li>
+  <li>
+    <p>As a technical team of Alastria I want to have a console that integrates alarms to different situations that require attention in each and every one of the nodes of the system.</p>
+  </li>
+  <li>
+    <p>As Alastria core technical team I want to have a direct communication channel with the administrators of each and every one of the nodes through which to request specific actions and receive the corresponding answers.</p>
+  </li>
+  <li>
+    <p>As an Alastria core technical team I want to have a REST service with the access API both to launch the operations, and to obtain the monitoring information in order to automate the monitoring processes.</p>
+  </li>
+</ol>
+
+<p>Repository: https://github.com/alastria/monitor</p>
+
+<p>Go version: &gt;= 1.3.
+RESTFUL API - BeeGo: https://beego.me/</p>
+
+<h2 id="url-forum-discussion">URL forum discussion</h2>
+
+<p>TBD</p>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Alastria Core Platform maintained by <a href="http://github.com/alastria">alastria</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>

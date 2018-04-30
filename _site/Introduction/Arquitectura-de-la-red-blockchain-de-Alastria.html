@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=b4c67f9aecbed8c2ee647a625c829c12feb2b5bf">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Descripción general | Alastria Core Platform</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Descripción general" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The infrastructure that powers the Alastria Blockchain Network" />
+<meta property="og:description" content="The infrastructure that powers the Alastria Blockchain Network" />
+<link rel="canonical" href="http://localhost:4000/Introduction/Arquitectura-de-la-red-blockchain-de-Alastria.html" />
+<meta property="og:url" content="http://localhost:4000/Introduction/Arquitectura-de-la-red-blockchain-de-Alastria.html" />
+<meta property="og:site_name" content="Alastria Core Platform" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/Introduction/Arquitectura-de-la-red-blockchain-de-Alastria.html","description":"The infrastructure that powers the Alastria Blockchain Network","@type":"WebPage","headline":"Descripción general","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="http://github.com/alastria/alastria-platform">View on GitHub</a>
+
+          <h1 id="project_title">Alastria Core Platform</h1>
+          <h2 id="project_tagline">The infrastructure that powers the Alastria Blockchain Network</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="descripción-general">Descripción general</h1>
+
+<p><img src="https://docs.google.com/drawings/d/e/2PACX-1vSdVgHvuVzWEtgSywNZ9YwgWa5rAfv-6TYz0wCYq26TLjFDXZo1d2Ziop8Mb8I6-9aP0u1QGp0fVzN7/pub?w=748&amp;h=557" alt="" /></p>
+
+<ul>
+  <li>~15-20 nodos validadores, que además actúan como “bootnodes” para todos los nodos regulares (como configuración inicial)</li>
+  <li>Nodos validadores en régimen de alta disponibilidad, 24/7</li>
+  <li>Los nodos validadores no deben utilizarse para conectar sistemas corporativos, ni para desplegar aplicaciones distribuidas ni interaccionar con ellas</li>
+  <li>No es obligatorio desplegar un nodo validador para los miembros de Alastria - se puede participar igualmente de la red mediante un nodo regular</li>
+</ul>
+
+<h3 id="-pero-se-admiten-voluntarios--">… pero se admiten voluntarios ;-)</h3>
+
+<h1 id="anatomía-de-un-nodo-regular">Anatomía de un nodo regular</h1>
+
+<p align="center">
+  <img src="https://docs.google.com/drawings/d/e/2PACX-1vQW5h-DG1WTO2dm19VDm7XdYFlQrdQqozXwK4IN61T3JAQJ2iikaCD4HZ9T-8PYqK8FYsH8C7-_DmXx/pub?w=341&amp;h=459" />
+</p>
+
+<p>Cada nodo regular de la red de Alastria deberá desplegar tres procesos fundamentales, en uno o varios servidores:</p>
+<ul>
+  <li><strong>Quorum</strong>, que constituye el cliente ethereum de base</li>
+  <li><strong>Constellation</strong>, que implementa el gestor y repositorio de transacciones privadas</li>
+  <li><strong>Monitor</strong>, que es una utilidad de monitorización creada por el equipo técnico de Alastria</li>
+</ul>
+
+<p>Para ello, se deberán permisionar la conectividad a los siguientes puertos:</p>
+<ul>
+  <li><strong>21000</strong> TCP/UDP, como entrada desde los nodos validadores, para el protocolo estándar de Ethereum de base</li>
+  <li><strong>9000</strong> TCP, como entrada y salida, con otros nodos con los que se implementen aplicaciones distribuidas privadas</li>
+  <li><strong>TBD</strong>, para la utilidad de monitorización (que además necesitará el puerto RPC local de geth)</li>
+</ul>
+
+<p>Los nodos regulares utilizarán un fichero “permissioned-nodes.json” que deberá incluir únicamente a los nodos validadores</p>
+
+<h1 id="anatomía-de-un-nodo-validador">Anatomía de un nodo validador</h1>
+
+<p align="center">
+  <img src="https://docs.google.com/drawings/d/e/2PACX-1vT4bfJFyDc1OUp7VwUx5eB0UYp6Yk3b_NCDQFMnuo7HBpHSXi-4-qqt7Z9Q3r8x4LysD1oy01O81SSd/pub?w=336&amp;h=462" />
+</p>
+
+<p>Cada nodo validador de la red de Alastria deberá desplegar dos procesos fundamentales, en uno o varios servidores:</p>
+<ul>
+  <li><strong>Quorum</strong>, que constituye el cliente ethereum de base</li>
+  <li><strong>Monitor</strong> (de nodo validador), que es una utilidad de monitorización creada por el equipo técnico de Alastria
+(los nodos validadores no implementan Constellation, ya que no se usan para desplegar aplicaciones)</li>
+</ul>
+
+<p>Para ello, se deberán permisionar los siguientes puertos:</p>
+<ul>
+  <li><strong>21000</strong> TCP/UDP, como entrada y salida para todos los nodos de la red</li>
+  <li><strong>TBD</strong>, para la utilidad de monitorización (que además necesitará el puerto RPC local de geth)</li>
+</ul>
+
+<p>Los nodos validadores utilizarán un fichero “permissioned-nodes.json” que incluye a todos los nodos de la red (tanto validadores como regulares)</p>
+
+<h1 id="configuraciones-mínimas-de-los-nodos">Configuraciones mínimas de los nodos</h1>
+
+<p>La definición de las especificaciones detalladas está en proceso, pero la siguiente descripción da una orientación.</p>
+
+<h2 id="nodos-regulares-configuración-mínima-recomendada">Nodos regulares: configuración mínima recomendada</h2>
+<ul>
+  <li>4 CPU cores</li>
+  <li>32 Gb RAM</li>
+  <li>100 Gb SSD</li>
+  <li>Red Hat &gt;= 7.0</li>
+</ul>
+
+<h2 id="nodos-validadores-primeras-ideas-de-sla">Nodos validadores: primeras ideas de SLA</h2>
+<ul>
+  <li>Servidores más potentes: 8 CPU cores, 128 Gb RAM, 1 Tb SSD; Red Hat &gt;= 7.0</li>
+  <li>Alta disponibilidad, 24/7</li>
+  <li>Respuesta a peticiones de actualización en 24 horas (permisionamiento de nodos e IP:puertos, actualización de versiones, etc.)</li>
+  <li>Mantenimiento del histórico completo del blockchain público (sin “tree prunning”)</li>
+  <li>Compromiso indefinido de mantenimiento del nodo validador, pudiendo darse voluntariamente de baja con un preaviso de un mes</li>
+</ul>
+
+<hr />
+<p>Siguiente: <a href="https://github.com/jesus-alastria/alastria-node/wiki/Roadmap-t%C3%A9cnico-de-la-plataforma-de-Alastria">Roadmap técnico de la plataforma de Alastria</a></p>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Alastria Core Platform maintained by <a href="http://github.com/alastria">alastria</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>

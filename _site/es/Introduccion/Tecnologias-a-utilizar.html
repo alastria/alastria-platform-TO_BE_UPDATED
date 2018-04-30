@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=b4c67f9aecbed8c2ee647a625c829c12feb2b5bf">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Alastria es una asociación agnóstica con respecto a la tecnología | Alastria Core Platform</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Alastria es una asociación agnóstica con respecto a la tecnología" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The infrastructure that powers the Alastria Blockchain Network" />
+<meta property="og:description" content="The infrastructure that powers the Alastria Blockchain Network" />
+<link rel="canonical" href="http://localhost:4000/es/Introduccion/Tecnologias-a-utilizar.html" />
+<meta property="og:url" content="http://localhost:4000/es/Introduccion/Tecnologias-a-utilizar.html" />
+<meta property="og:site_name" content="Alastria Core Platform" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/es/Introduccion/Tecnologias-a-utilizar.html","description":"The infrastructure that powers the Alastria Blockchain Network","@type":"WebPage","headline":"Alastria es una asociación agnóstica con respecto a la tecnología","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="http://github.com/alastria/alastria-platform">View on GitHub</a>
+
+          <h1 id="project_title">Alastria Core Platform</h1>
+          <h2 id="project_tagline">The infrastructure that powers the Alastria Blockchain Network</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="alastria-es-una-asociación-agnóstica-con-respecto-a-la-tecnología">Alastria es una asociación agnóstica con respecto a la tecnología</h1>
+<ul>
+  <li>Y además es importante entender que las tecnologías de blockchain se encuentran en plena evolución, y seguramente no 100% preparadas para su uso a nivel “enterprise”</li>
+  <li>Como comienzo, Alastria ha desplegado una primera red (testnet) de tipo Ethereum utilizando la tecnología de Quorum, y la complementará con una red de producción (mainnet) paralela</li>
+  <li>A futuro, es previsible que Alastria despliegue nuevas redes en otras tecnologías, tanto de tipo Ethereum (e.g. Parity, Clearmatics) como de otro tipo (e.g. Hyperledger Fabric). Para ello será crucial la involucración activa de más miembros de Alastria</li>
+</ul>
+
+<h1 id="introducción-a-quorum">Introducción a Quorum</h1>
+<ul>
+  <li>Un fork “lightweight” de geth =&gt; compatibilidad total con ethereum</li>
+  <li>Basado en algoritmos de consenso, en lugar de “proof of work” =&gt; mejores prestaciones (~800 tx/s), sin “forks” en la cadena</li>
+  <li>Diseñado para construir redes permisionadas, en las que los participantes son conocidos y tienen reputación</li>
+  <li>Sin una criptomoneda intrínseca, aunque manteniendo el concepto de “gas”</li>
+  <li>Adicionalmente a geth se añade constellation, un sistema para almacenar y ejecutar smart contracts privados
+Implementando ZSL, un sistema de “zero-knowledge proofs”, que permite ofuscar los datos numéricos de los smart contracts</li>
+</ul>
+
+<p>Hay mucha más información sobre Quorum en su Github: <a href="https://github.com/jpmorganchase/quorum">Quorum</a></p>
+
+<h1 id="algoritmos-de-consenso-en-quorum">Algoritmos de consenso en Quorum</h1>
+<h3 id="quorumchain">QuorumChain</h3>
+<p>Nodos “blockmakers” que proponen bloques y “voters” que votan su validez según un quorum (no BFT)</p>
+<h3 id="raft">RAFT</h3>
+<p>Nodo “leader” elegido por consenso que propone bloques (no BFT)</p>
+<h3 id="istambul">Istambul</h3>
+<p>Nodo “proposer” designado por rotación en modo round-robin entre una serie de nodos “validators”, que comprueban la validez de los bloques (BFT)</p>
+
+<p><img src="https://docs.google.com/drawings/d/e/2PACX-1vQi7KLyyOJvYTYXxSdkR-adG-6OkMVMqunwrFWha3huX_UBtMYjMfPqzpn7Hqu52HnMoModiSoonis4/pub?w=496&amp;h=403" alt="" /></p>
+
+<h1 id="modelo-de-permisionamiento-en-quorum">Modelo de permisionamiento en Quorum</h1>
+<p><img src="https://docs.google.com/drawings/d/e/2PACX-1vTKAjcYE_wY8wqhOQ9h23gdiWGPRFJJbSIcG4VZCFStmWx0GR7OG_F2oZyByoGJ9MGxdWjBvTReIN3c/pub?w=493&amp;h=325" alt="" /></p>
+
+<ul>
+  <li>Los nodos se identifican por su “enode”, su IP pública y su puerto</li>
+  <li>Cada nodo de Quorum especifica los nodos que permite que se conecten a él a través del fichero “permissioned-nodes.json”</li>
+  <li>Por tanto, el modelo actual de permisionamiento de Quorum se basa en nodos, no en “addresses”</li>
+  <li>Es habitual disponer de un conjunto de “bootnodes” oficiales, que mantengan la lista oficial de enodos permisionados</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+"enode://5afe866a3dbff3cd8f12a0553da765c60a54eedc018df7aa8376ae923d59fedd2ae9d0252b26a7d254b04d941d338949103ef9f41c6f421fc11ba0d7d5da0e21@52.18.188.91:8002",
+"enode://f00aa65a8e547bb5f2bb382aa857591e4bb2bd80421554984b248c46370c03e2a4c97d011748ba7db24d646a1ebde56f1316307901fbfe71ff00b90f2f90299d@52.14.141.30:8002",
+"enode://efe68efb0126767b015f1a04813561b019f64c5fe36f957bd66a5e60f4c94c82a5ad79d70aa96064b672ba60da89a3f695361eb56d6d1fdf97b1e5693135e2ef@52.5.9.18:8002"
+]
+</code></pre></div></div>
+<h1 id="ether-y-gas-en-quorum">Ether y Gas en Quorum</h1>
+<h3 id="gas">Gas</h3>
+<p>Es una medidaa de la carga de computación al realizar cualquier transacción en la red de blockchain que consuma recursos (ciclos de la máquina virtual, espacio de memoria).</p>
+
+<p>El protocolo establece límites de gas por transacción y por bloque, de forma que la red está protegida ante cargas de trabajo excesivas (e.g. un bucle infinito).</p>
+
+<h3 id="ether">Ether</h3>
+<p>Es la criptomoneda nativa de la red de ethereum, utilizada para pagar por el gas consumido al ejecutar transacciones o alocar recursos en la red distribuida.</p>
+
+<h3 id="cost-of-gas">Cost of Gas</h3>
+<p>Es la medida que relaciona ambas magnitudes, expresada en unidades de ether por unidad de consumo de gas</p>
+
+<p>Quorum mantiene el concepto de gas y los límites por transacción y por bloque, pero establece de forma forzada un cost of gas = 0</p>
+
+<p>De esta forma, las transacciones no cuestan ether, pero se mantiene la protección del sistema.</p>
+
+<p>Hasta la versión 2.0.0 era necesario tener un balance positivo de ether en una dirección (“address”) para poder enviar transacciones desde ella - por lo que era preciso prealocar ether y enviarlo a las direcciones a utilizar. Pero no a partir de la versión 2.0.0</p>
+
+<h1 id="quorum-roadmap">Quorum: roadmap</h1>
+<ul>
+  <li>Mejor modelo de permisionamiento, idealmente controlado por smart contracts:
+    <ul>
+      <li>Sin posibilidad de re-permisionamiento</li>
+      <li>Tanto a nivel de nodo como a nivel de address</li>
+    </ul>
+  </li>
+  <li>Mecanismos de anti-spam, e.g. con cost of gas &gt; 0</li>
+  <li>Transmisión de transacciones privadas (Constellation) por mecanismo de “gossiping” (i.e. utilizando nodos “relay” para no necesitar abrir puertos entre peers)</li>
+  <li>Nuevos modelos de privacidad (e.g. ring signatures, address obfuscation)</li>
+  <li>Mecanismos de mensajería segura</li>
+  <li>Mecanismos de almacenamiento de ficheros</li>
+</ul>
+
+<p><strong>Roadmap en proceso de ser consensuado, en el ámbito de la Enterprise Ethereum Alliance</strong> (equipo “core” de Alastria en contacto directo)</p>
+
+<hr />
+<p>Siguiente: <a href="https://github.com/jesus-alastria/alastria-node/wiki/Arquitectura-de-la-red-blockchain-de-Alastria">Arquitectura de la red blockchain de Alastria</a></p>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Alastria Core Platform maintained by <a href="http://github.com/alastria">alastria</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
