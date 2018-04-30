@@ -4,4 +4,4 @@
 2. [REFERENCE ARCHITECTURE](Requirements/Reference-architecture.md): to help discussions around network items
 3. [ALASTRIA QUORUM NODES](https://github.com/alastria/alastria-node): how to install and connect Validator and Regular nodes to ALastria Testnet
 4. [ALASTRIA NODE MONITORING](https://github.com/alastria/monitor): tools for implementing a Decentralized Governance Model
-[Roadmap](Roadmap/roadmap.html): The roadmap for the core platform
+5. [Roadmap](Roadmap/roadmap.html): The roadmap for the core platform
