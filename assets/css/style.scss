@@ -2,6 +2,9 @@
 ---
 
 @import "{{ site.theme }}";
+.inner {
+  max-width: 900px;
+}
 
 /* The actual timeline (the vertical ruler) */
     .JRMtimeline {
