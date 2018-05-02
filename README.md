@@ -1,6 +1,6 @@
 # Alastria Platform information
 
-Please go to the wiki in this Github: [Alastria Core Platform]
+### Please go to the wiki in this Github: [Alastria Core Platform](https://github.com/alastria/alastria-platform/wiki)
 
 1. [PLATFORM REQUIREMENTS](Requirements/Platform-requirements.md): requirements for a country blockchain network
 2. [REFERENCE ARCHITECTURE](Requirements/Reference-architecture.md): to help discussions around network items
