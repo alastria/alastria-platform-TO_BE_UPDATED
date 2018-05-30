@@ -16,12 +16,12 @@ Quorum is designed for applications requiring high speed and high throughput pro
 There is already an initial version of the Alastria Testnet composed of around 20 nodes from different entities, which is stable enough to enable deployment and testing of Smart Contracts.
 
 You can read more on the Alastria Testnet and how to develop and deploy Dapps in Alastria here:
-[Alastria Testnet for Dapp developers](Alastria-Testnet-for-Dapp-developers)
+[Alastria Testnet for Dapp developers](Alastria-Testnet-for-Dapp-developers.md)
 
 ### You want to know what are the technical problems that Alastria is solving, how we are approaching them and what are the challenges for a network like Alastria
 Being a country-wide blockchain network with the ambition to be as public as possible, Alastria is neither a public-permissionless network nor a private consortium (sometimes just referred to as permissioned network). Alastria shares some of the properties of both types of networks, but it has some requirements of its own.
 
-You can find a more detailed description of the Alastria Platform, its requirements and challenges for the future here: [Alastria Core Technical Platform](Alastria-Core-Technical-Platform)
+You can find a more detailed description of the Alastria Platform, its requirements and challenges for the future here: [Alastria Core Technical Platform](Alastria-Core-Technical-Platform.md)
 
 ### You want to collaborate in building the infrastructure that powers Alastria and allows running Dapps
 For Dapp developers, the Core Platform APIs and the deployment mechanisms are already stable and they are not expected to change.
