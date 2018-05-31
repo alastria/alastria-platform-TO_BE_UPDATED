@@ -228,7 +228,7 @@ For example, in Quorum, private transactions are only executed in the nodes whic
 In contrast to public state, safety of private state data can only be ensured indirectly: even though private transactions are executed in just a reduced number of nodes in the network, the transactions are included in the blocks that are stored in the blockchain in all nodes. The transaction in the block does not include the payload nor the transaction results. A node that did not participate in the private transaction can not verify the transaction by executing it, but all nodes that did participate in the transaction can replay it and given the deterministic nature of the EVM, they can asume that if the initial states were the same
 
 # 5. ALASTRIA: A PUBLIC-PERMISSIONED BLOCKCHAIN NETWORK
-![Alastria in the Trust Continuum](assets/Alastria%20in%20the%20Trust%20Continuum.jpg)
+![Alastria in the Trust Continuum](/assets/Alastria%20in%20the%20Trust%20Continuum.jpg)
 <p align="center"><b>Fig2. - Alastria in the Trust Continuum.</b></p>
 
 ***
@@ -276,7 +276,7 @@ The next section introduces a proposed reference architecture for blockchain sys
 # 7. REFERENCE ARCHITECTURE OF A BLOCKCHAIN
 The reference architecture of blockchain and distributed ledger technology consists of five layers, as well as a cross-layer feature set across the layers. They are depicted in the following diagram, and the next sections describe the layers and each of the individual components.
 
-![Reference architecture of a DLT](assets/Reference%20architecture%20of%20a%20DLT%20-%20overall.jpg)
+![Reference architecture of a DLT](/assets/Reference%20architecture%20of%20a%20DLT%20-%20overall.jpg)
 <p align="center"><b>Fig3. - Reference architecture of a blockchain.</b></p>
 
 ## 7.1. Infrastructure layer
@@ -490,7 +490,7 @@ Off-Ledger data is any data store outside the DLT system that can hold data that
 ## 7.6. Cross-layer functions
 The cross-layer functions support the components across all the functional layers. For example, security is needed for user layer, API layer and DLT Platform layer, therefore security is a cross-layer functional component. Cross layer functions can support other cross layer functions as well. The functions are grouped into Development, Operations & Management, Security, and Governance & Compliance categories. The cross-layer functions are depicted in the following figure and are described in more detail in the following sections.
 
-![Reference architecture of a DLT](assets/Reference%20architecture%20of%20a%20DLT%20-%20cross%20layer.jpg)
+![Reference architecture of a DLT](/assets/Reference%20architecture%20of%20a%20DLT%20-%20cross%20layer.jpg)
 <p align="center"><b>Fig4. - Cross layer functions in a blockchain.</b></p>
 
 ### 7.6.1. Development
