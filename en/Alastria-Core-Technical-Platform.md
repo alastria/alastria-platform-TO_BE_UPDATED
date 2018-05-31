@@ -1,10 +1,13 @@
-# Requirements and challenges for a country blockchain network
+# Alastria Core Technical Platform
+## Requirements and challenges for a country blockchain network
 
 <!-- TOC -->
 
-- [Requirements and challenges for a country blockchain network](#requirements-and-challenges-for-a-country-blockchain-network)
-- [1. OBJECTIVE](#1-objective)
-- [2. INTRODUCTION](#2-introduction)
+- [Alastria Core Technical Platform](#alastria-core-technical-platform)
+    - [Requirements and challenges for a country blockchain network](#requirements-and-challenges-for-a-country-blockchain-network)
+- [1. Objective](#1-objective)
+- [2. Introduction](#2-introduction)
+- [3. Alastria: between Public-Permissionless networks and Private Consortium networks](#3-alastria--between-public-permissionless-networks-and-private-consortium-networks)
 - [3. THE PUBLIC-PERMISSIONLESS BLOCKCHAIN NETWORKS](#3-the-public-permissionless-blockchain-networks)
     - [3.1. The problem of Scalability of Public-Permissioned blockchains](#31-the-problem-of-scalability-of-public-permissioned-blockchains)
     - [3.2. The problem of Transaction Costs: High and Volatile](#32-the-problem-of-transaction-costs--high-and-volatile)
@@ -78,19 +81,38 @@
 
 <!-- /TOC -->
 
-# 1. OBJECTIVE
+# 1. Objective
 This document describes the requirements and challenges for a country blockchain network like Alastria. While the document tries to be as technology-agnostic as possible, there are subjects where we have to focus on a given technology, and when this is the case, we discuss the initial implementation using Quorum. However, the intention is to include specific analyses for other technologies like Hyperledger.  This document is live and continuously evolving, describing the current situation of the technology with respect to the requirements and the challenges that have to be solved.
 
-# 2. INTRODUCTION
+# 2. Introduction
+
 Alastria is a Spanish nonprofit association with the objective to create the first multi-industry national blockchain network, to support transactions with full legal validity, and with appropriate levels of privacy.
 
-We are currently more than 200 companies and institutions from different sectors like banking, telco, energy, insurance, law firms, technology and services companies, research institutions, universities, etc.. The association is growing, because it is inclusive and open to anybody who would like to collaborate and participate in the initiative.
+We are currently more than 250 companies and institutions from different sectors like banking, telco, energy, insurance, law firms, technology and services companies, research institutions, universities, etc.. The association is growing, because it is inclusive and open to anybody who would like to collaborate and participate in the initiative.
 
 The associates of Alastria are collaborating with each other in the definition, deployment, operation and maintenance of the infrastructure, but will compete with each other in the specific use cases built on top of the network.
 
-Being a country-wide blockchain network, Alastria is neither a public-permissionless network nor a private consortium (sometimes just referred to as permissioned network). Alastria shares some of the properties of both types of networks, but it has some requirements of its own. This document is structured as follows:
+Being a country-wide blockchain network, Alastria is neither a public-permissionless network nor a private consortium. Alastria shares some of the properties of both types of networks, but it has some requirements of its own. This document is structured as follows:
 * The first two sections describe the general characteristics of Public-Permissionless and Consortium blockchains and the problems that they present for a network like Alastria
 * Then we describe the specific requirements of Alastria, using as a scheme and guiding theme a general Reference Architecture of blockchains systems
+
+# 3. Alastria: between Public-Permissionless networks and Private Consortium networks
+
+Distributed fault tolerant protocols have been deployed traditionally at relatively small scale, and typically in a single administrative domain (that is, inside a single legal company) where adversarial attacks can be minimized and so they are not a primary concern.
+
+Bitcoin was the first practical system to solve the problem of fault tolerant distributed computing in a completely public and anonymous environment where anonymous malicious adversaries could behave in a Byzantine way to try to make the network malfunction.
+
+Possibly the major invention of the Bitcoin system was to design a consensus mechanism with an embedded digital currency, where agreement on the order of transactions is negotiated via an economically incentivized cryptographic random lottery based on partial hash collisions. This novel consensus algorithm was called Proof-of-Work (PoW), reflecting the idea that in order to win the lottery, the nodes had to use a lot of computational resources to solve the cryptographic puzzle used for the lottery.
+
+Apart from enabling the consensus on the order of transactions, the PoW mechanism provides two additional benefits: on one hand it protects the system from Sybil attacks (especially difficult to avoid in public-permissionless networks), and on the other it creates a very good incentivisation mechanism for promoting anonymous participants to dedicate expensive computing resources to execute the consensus algorithm required for the operation of the network and ensuring safety.
+
+The Bitcoin and Ethereum systems are very robust and they operate successfully in a highly adversarial environment, where highly-motivated and malicious attacks are commonplace, and does so in spite of the anonymity of the entities operating the nodes in a fully decentralized way. This is the reason why the system is many times referred to as the “Trustless machine”.
+
+    A brief note on terminology: we refer to these types of networks as "Public-Permissionless" to stress the fact that the participants do not need to request permission to anybody in order to participate in the network. It is very common in the literature to drop the "Permissionless" word and just use "Public" to mean both accessible to anybody and without the need to request permission.
+
+However, in other contexts, the word "Public" does not necessarily imply the anonymous access to the services provided in a public manner. For example, in order to access to the public health services of a country, their citizens normally have to identify themselves to the entity providing the service. In those other contexts there are many examples of both Public-anonymous and Public-identified provision of public services.
+
+Indeed, we will see that Alastria has the objective of being a Public-Permissioned network, in the sense that is is open to all entities in Spain, but it is permissioned so the entities have to be identified.
 
 # 3. THE PUBLIC-PERMISSIONLESS BLOCKCHAIN NETWORKS
 Distributed fault tolerant protocols have been deployed traditionally at relatively small scale, and typically in a single administrative domain (that is, inside a single legal company) where adversarial attacks can be minimized and so they are not a primary concern.
