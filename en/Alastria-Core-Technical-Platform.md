@@ -125,7 +125,7 @@ As Figure 1 describes, the prevailing public-permissionless blockchain networks 
 
 ***
 
-![Trust Continuum](assets/Trust%20continuum_%20trustless%20vs%20centralized.jpg)
+![Trust Continuum](/assets/Trust%20continuum_%20trustless%20vs%20centralized.jpg)
 <p align="center"><b>Fig1. - The Trust Continuum.</b></p>
 
 ***
