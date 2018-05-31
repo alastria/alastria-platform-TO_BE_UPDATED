@@ -7,6 +7,7 @@
     - [Requirements and challenges for a country blockchain network](#requirements-and-challenges-for-a-country-blockchain-network)
 - [1. Objective](#1-objective)
 - [2. Introduction](#2-introduction)
+- [3. General characteristics of the main blockchain technologies](#3-general-characteristics-of-the-main-blockchain-technologies)
 - [3. The Public-Permissionless blockchain networks](#3-the-public-permissionless-blockchain-networks)
     - [3.1. The problem of Scalability of Public-Permissioned blockchains](#31-the-problem-of-scalability-of-public-permissioned-blockchains)
     - [3.2. The problem of Transaction Costs: High and Volatile](#32-the-problem-of-transaction-costs--high-and-volatile)
@@ -95,7 +96,7 @@ Being a country-wide blockchain network, Alastria is neither a public-permission
 * The first two sections describe the general characteristics of Public-Permissionless and Consortium blockchains and the problems that they present for a network like Alastria
 * Then we describe the specific requirements of Alastria, using as a scheme and guiding theme a general Reference Architecture of blockchains systems
 
-# 3. The Public-Permissionless blockchain networks
+# 3. General characteristics of the main blockchain technologies
 
 Distributed fault tolerant protocols have been deployed traditionally at relatively small scale, and typically in a single administrative domain (that is, inside a single legal company) where adversarial attacks can be minimized and so they are not a primary concern.
 
@@ -108,6 +109,39 @@ Apart from enabling the consensus on the order of transactions, the PoW mechanis
 The [Bitcoin](https://bitcoin.org/bitcoin.pdf) and [Ethereum](https://www.ethereum.org/) systems are very robust and they operate successfully in a highly adversarial environment, where highly-motivated and malicious attacks are commonplace, and does so in spite of the anonymity of the entities operating the nodes in a fully decentralized way. This is the reason why the system is many times referred to as the “Trustless machine”.
 
 > A brief note on terminology: we refer to these types of networks as "Public-Permissionless" to stress the fact that the participants do not need to request permission to anybody in order to participate in the network. It is very common in the literature to drop the "Permissionless" word and just use "Public" to mean both accessible to anybody and without the need to request permission.
+>
+> However, in other contexts, the word "Public" does not necessarily imply the anonymous access to the services provided in a public manner. For example, in order to access to the public health services of a country, their citizens normally have to identify themselves to the entity providing the service. In those other contexts there are many examples of both Public-anonymous and Public-identified provision of public services.
+>
+> Indeed, we will see that Alastria has the objective of being a Public-Permissioned network, in the sense that is is open to all entities in Spain, but it is permissioned so the entities have to be identified.
+
+Soon, the underlying technology powering these systems started to find applicability in other environments where the requirements for decentralization were not so high, even though it was required a high level of collaboration among peers (typically enterprises), higher than what was possible with the current centralized technologies. A set of distributed systems started to appear with some characteristics that were not possible before, with numerous fields of application and with enormous potential for innovation.
+
+A class of these systems is what is known as Private Consortiums Blockchains, because they have the objective to improve efficiency in the creation of consortiums or groups of companies and entities, without the existence of centra entities which operate a centralized database or transactional system, acting as the central point to which all other entities have to connect. In this sense, we can say that private consortium blockchains allow the implementation of the P2P paradigm among companies, instead of among individuals, as it was the original objective of Bitcoin.
+
+Two of the most widely used technologies for private consortiums are Quorum and Hyperledger Fabric (or simply Fabric).
+In order to understand the pros and cons of the different technologies, it is first convenien to analyze some of the characteristics of blockchain systems, public and private, and how Ethereum, Quorum and Fabric approach each of those characteristics.
+
+In the following sections, we analyze the different tecnologies according to these characteristics:
+
+* Transaction execution model
+* Scalability
+* Immutability
+* Privacy
+* Safety
+
+# 3. The Public-Permissionless blockchain networks
+
+Distributed fault tolerant protocols have been deployed traditionally at relatively small scale, and typically in a single administrative domain (that is, inside a single legal company) where adversarial attacks can be minimized and so they are not a primary concern.
+
+[Bitcoin](https://bitcoin.org/bitcoin.pdf) was the first practical system to solve the problem of fault tolerant distributed computing in a completely public and anonymous environment where anonymous malicious adversaries could behave in a [Byzantine](https://en.wikipedia.org/wiki/Byzantine_fault_tolerance) way to try to make the network malfunction.
+
+Possibly the major invention of the Bitcoin system was to design a consensus mechanism with an embedded digital currency, where agreement on the order of transactions is negotiated via an economically incentivized cryptographic random lottery based on partial hash collisions. This novel consensus algorithm was called Proof-of-Work (PoW), reflecting the idea that in order to win the lottery, the nodes had to use a lot of computational resources to solve the cryptographic puzzle used for the lottery.
+
+Apart from enabling the consensus on the order of transactions, the PoW mechanism provides two additional benefits: on one hand it protects the system from Sybil attacks (especially difficult to avoid in public-permissionless networks), and on the other it creates a very good incentivisation mechanism for promoting anonymous participants to dedicate expensive computing resources to execute the consensus algorithm required for the operation of the network and ensuring safety.
+
+The [Bitcoin](https://bitcoin.org/bitcoin.pdf) and [Ethereum](https://www.ethereum.org/) systems are very robust and they operate successfully in a highly adversarial environment, where highly-motivated and malicious attacks are commonplace, and does so in spite of the anonymity of the entities operating the nodes in a fully decentralized way. This is the reason why the system is many times referred to as the “Trustless machine”.
+
+A brief note on terminology: we refer to these types of networks as "Public-Permissionless" to stress the fact that the participants do not need to request permission to anybody in order to participate in the network. It is very common in the literature to drop the "Permissionless" word and just use "Public" to mean both accessible to anybody and without the need to request permission.
 
 However, in other contexts, the word "Public" does not necessarily imply the anonymous access to the services provided in a public manner. For example, in order to access to the public health services of a country, their citizens normally have to identify themselves to the entity providing the service. In those other contexts there are many examples of both Public-anonymous and Public-identified provision of public services.
 
