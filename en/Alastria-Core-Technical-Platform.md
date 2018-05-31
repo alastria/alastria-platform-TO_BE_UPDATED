@@ -108,7 +108,7 @@ Apart from enabling the consensus on the order of transactions, the PoW mechanis
 
 The Bitcoin and Ethereum systems are very robust and they operate successfully in a highly adversarial environment, where highly-motivated and malicious attacks are commonplace, and does so in spite of the anonymity of the entities operating the nodes in a fully decentralized way. This is the reason why the system is many times referred to as the “Trustless machine”.
 
-    A brief note on terminology: we refer to these types of networks as "Public-Permissionless" to stress the fact that the participants do not need to request permission to anybody in order to participate in the network. It is very common in the literature to drop the "Permissionless" word and just use "Public" to mean both accessible to anybody and without the need to request permission.
+A brief note on terminology: we refer to these types of networks as "Public-Permissionless" to stress the fact that the participants do not need to request permission to anybody in order to participate in the network. It is very common in the literature to drop the "Permissionless" word and just use "Public" to mean both accessible to anybody and without the need to request permission.
 
 However, in other contexts, the word "Public" does not necessarily imply the anonymous access to the services provided in a public manner. For example, in order to access to the public health services of a country, their citizens normally have to identify themselves to the entity providing the service. In those other contexts there are many examples of both Public-anonymous and Public-identified provision of public services.
 
