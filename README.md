@@ -3,7 +3,7 @@ Alastria is the first multisectorial consortium promoted by organizations and in
 
 This site describes the technical details of the Alastria Platform, the blockchain infrastructure which is being built collaboratively by the entities associated in Alastria.
 
-If you are not interested in the low-level technical details but would like to know more about the consortium, please go to the website: [Alastria National Blockchain Ecosystem](https://alastria.io/index_en.html).
+If you are not interested in the low-level technical details but would like to know more about the consortium, please go to the website: [Alastria National Blockchain Ecosystem](https://alastria.io/en/).
 
 # Using this wiki
 There may be several reasons why you came here. Choose the one you are most interested in:
