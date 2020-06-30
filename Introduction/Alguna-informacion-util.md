@@ -1,34 +1,19 @@
-# Equipo técnico “core” de plataforma de Alastria
-|Nombre                                |Empresa       |
-|--------------------------------------|--------------|
-|Jesús Ruiz (director, CTO de Alastria)|Santander     |
-|Marcos Serradilla                     |Vector        |
-|Alfonso de la Rocha                   |Indra        |
-|Esteban Montenegro                    |Repsol        |
-|Iñigo García                          |Grant Thornton|
-|Angel Rodriguez                       |Everis        |
+# Core Technical Team of Alastria Platforms
+|
+* **All Core Team members are people that are working in a volunteer manner with a sustantial manday effort (>50%)**
+* **All are technical people, with advanced knowledge of programming (go, javascript, python,..) and/or linux (scripting, devops, docker, etc.)**
+* **All members could contribute with people to be added to Core Team, to help in the definition and implementation of the Roadmap”**
 
+**=> New volunteers and contributors are required!!!**
 
-***
-
-* **Todas las personas del equipo “core” son cedidas a Alastria (“seconded”), a tiempo completo o con una dedicación sustancial (>50%)**
-* **Se trata de personas técnicas, con conocimientos avanzados de programación (go, javascript, python) y de linux (scripting, devops, etc.)**
-* **Todos los miembros que lo deseen pueden aportar personas al equipo “core”, para así contribuir a definir y acelerar la implementación del “roadmap”**
-
-**=> Se admiten/solicitan voluntarios!!!**
-
-# Herramientas de colaboración y links relevantes
-* **Mail:** platform@alastria.io
+# Colaboration tools and important links
+* **Mail:** support@alastria.io
 * **Github:** [https://github.com/alastria/alastria-node](https://github.com/alastria/alastria-node)
-* **Foro de discusión técnico:** https://alastriaplatform.invisionzone.com/ (es una dirección temporal mientras migramos al dominio alastria.io)
-* **Listas de distribución:**
-    * Administradores de nodos regulares
-    * Administradores de nodos validadores
-    * Comunidad técnica (para temas de plataforma)
+* **Technical Forum:** using Slack Alastria Channel (please, get an invitatión by sending a mail to support@alastria.io)
 * **Web de Alastria:** https://www.alastria.io
-* **Block explorer testnet Alastria:** http://alastria-docker.westus2.cloudapp.azure.com:5000/blocks/latest/1
+* **Block explorer Red-T Alastria:** https://blkexplorer1.telsius.alastria.io/
 
-# Algunos links útiles
+# Some useful links
 * **Ethereum:** https://www.ethereum.org/
 * **Ethereum wiki:** https://github.com/ethereum/wiki/wiki
 * **geth wiki:** https://github.com/ethereum/go-ethereum/wiki
